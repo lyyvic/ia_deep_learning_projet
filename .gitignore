@@ -1,2 +1,3 @@
 venv/
 sujet_projet/datasets
+/wandb/
