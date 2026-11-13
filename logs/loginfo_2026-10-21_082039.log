@@ -1,0 +1,115 @@
+# TESTPILOT_RUN_PPID=58055
+2026-10-21 08:20:39 [INFO] : root : Entraînement sur GPU : ['NVIDIA GeForce RTX 5090']
+2026-10-21 08:20:39 [INFO] : root : TensorFlow version: 2.21.0
+2026-10-21 08:20:39 [INFO] : root : Classes originales : ['cheops', 'debris', 'double_start', 'earth_observation_sat_1', 'lisa_pathfinder', 'proba_2', 'proba_3_csc', 'proba_3_ocs', 'smart_1', 'soho', 'xmm_newton']
+2026-10-21 08:20:39 [INFO] : root : Classes du modèle : ['satellite', 'debris']
+2026-10-21 08:20:39 [INFO] : root : Train : 2105 images
+2026-10-21 08:20:39 [INFO] : root : Val   : 239 images
+2026-10-21 08:20:39 [INFO] : root : Test  : 123 images
+2026-10-21 08:20:39 [INFO] : root : Distribution binaire (Train) :
+2026-10-21 08:20:39 [INFO] : root : binary_class_name
+satellite    1919
+debris        186
+Name: count, dtype: int64
+2026-10-21 08:20:39 [INFO] : root : Distribution des classes binaires (Train) :
+2026-10-21 08:20:39 [INFO] : root : binary_class_name
+satellite    1919
+debris        186
+Name: count, dtype: int64
+2026-10-21 08:20:39 [INFO] : root : Datasets TensorFlow construits et prêts pour l'entraînement !
+2026-10-21 08:20:39 [INFO] : root : Train : 2105 images
+2026-10-21 08:20:39 [INFO] : root : binary_class_name
+satellite    1919
+debris        186
+Name: count, dtype: int64
+2026-10-21 08:20:39 [INFO] : root : Validation : 239 images
+2026-10-21 08:20:39 [INFO] : root : binary_class_name
+satellite    218
+debris        21
+Name: count, dtype: int64
+2026-10-21 08:20:39 [INFO] : root : Poids de classe :
+2026-10-21 08:20:39 [INFO] : root : Modèle rechargé depuis : models/satellite_debris_best.keras
+2026-10-21 08:20:43 [INFO] : root : Mode du learning rate : cosine_decay (initial=0.001)
+2026-10-21 08:20:59 [INFO] : root : Epoch 1 - détections validation : satellite=195, debris=44
+2026-10-21 08:21:04 [INFO] : root : Epoch 2 - détections validation : satellite=77, debris=162
+2026-10-21 08:21:09 [INFO] : root : Epoch 3 - détections validation : satellite=239, debris=0
+2026-10-21 08:21:14 [INFO] : root : Epoch 4 - détections validation : satellite=239, debris=0
+2026-10-21 08:21:19 [INFO] : root : Epoch 5 - détections validation : satellite=239, debris=0
+2026-10-21 08:21:24 [INFO] : root : Epoch 6 - détections validation : satellite=239, debris=0
+2026-10-21 08:21:29 [INFO] : root : Epoch 7 - détections validation : satellite=239, debris=0
+2026-10-21 08:21:34 [INFO] : root : Epoch 8 - détections validation : satellite=238, debris=1
+2026-10-21 08:21:39 [INFO] : root : Epoch 9 - détections validation : satellite=166, debris=73
+2026-10-21 08:21:44 [INFO] : root : Epoch 10 - détections validation : satellite=194, debris=45
+2026-10-21 08:21:49 [INFO] : root : Epoch 11 - détections validation : satellite=0, debris=239
+2026-10-21 08:21:54 [INFO] : root : Epoch 12 - détections validation : satellite=0, debris=239
+2026-10-21 08:21:58 [INFO] : root : Epoch 13 - détections validation : satellite=219, debris=20
+2026-10-21 08:22:03 [INFO] : root : Epoch 14 - détections validation : satellite=0, debris=239
+2026-10-21 08:22:08 [INFO] : root : Epoch 15 - détections validation : satellite=202, debris=37
+2026-10-21 08:22:13 [INFO] : root : Epoch 16 - détections validation : satellite=226, debris=13
+2026-10-21 08:22:18 [INFO] : root : Epoch 17 - détections validation : satellite=190, debris=49
+2026-10-21 08:22:23 [INFO] : root : Epoch 18 - détections validation : satellite=220, debris=19
+2026-10-21 08:22:28 [INFO] : root : Epoch 19 - détections validation : satellite=232, debris=7
+2026-10-21 08:22:33 [INFO] : root : Epoch 20 - détections validation : satellite=0, debris=239
+2026-10-21 08:22:38 [INFO] : root : Epoch 21 - détections validation : satellite=149, debris=90
+2026-10-21 08:22:43 [INFO] : root : Epoch 22 - détections validation : satellite=115, debris=124
+2026-10-21 08:22:48 [INFO] : root : Epoch 23 - détections validation : satellite=67, debris=172
+2026-10-21 08:22:53 [INFO] : root : Epoch 24 - détections validation : satellite=138, debris=101
+2026-10-21 08:22:58 [INFO] : root : Epoch 25 - détections validation : satellite=179, debris=60
+2026-10-21 08:23:03 [INFO] : root : Epoch 26 - détections validation : satellite=155, debris=84
+2026-10-21 08:23:07 [INFO] : root : Epoch 27 - détections validation : satellite=169, debris=70
+2026-10-21 08:23:12 [INFO] : root : Epoch 28 - détections validation : satellite=167, debris=72
+2026-10-21 08:23:18 [INFO] : root : Epoch 29 - détections validation : satellite=204, debris=35
+2026-10-21 08:23:23 [INFO] : root : Epoch 30 - détections validation : satellite=213, debris=26
+2026-10-21 08:23:28 [INFO] : root : Epoch 31 - détections validation : satellite=217, debris=22
+2026-10-21 08:23:33 [INFO] : root : Epoch 32 - détections validation : satellite=219, debris=20
+2026-10-21 08:23:38 [INFO] : root : Epoch 33 - détections validation : satellite=213, debris=26
+2026-10-21 08:23:43 [INFO] : root : Epoch 34 - détections validation : satellite=216, debris=23
+2026-10-21 08:23:48 [INFO] : root : Epoch 35 - détections validation : satellite=217, debris=22
+2026-10-21 08:23:53 [INFO] : root : Epoch 36 - détections validation : satellite=218, debris=21
+2026-10-21 08:23:58 [INFO] : root : Epoch 37 - détections validation : satellite=166, debris=73
+2026-10-21 08:24:02 [INFO] : root : Epoch 38 - détections validation : satellite=202, debris=37
+2026-10-21 08:24:07 [INFO] : root : Epoch 39 - détections validation : satellite=177, debris=62
+2026-10-21 08:24:12 [INFO] : root : Epoch 40 - détections validation : satellite=142, debris=97
+2026-10-21 08:24:17 [INFO] : root : Epoch 41 - détections validation : satellite=173, debris=66
+2026-10-21 08:24:22 [INFO] : root : Epoch 42 - détections validation : satellite=195, debris=44
+2026-10-21 08:24:27 [INFO] : root : Epoch 43 - détections validation : satellite=200, debris=39
+2026-10-21 08:24:32 [INFO] : root : Epoch 44 - détections validation : satellite=148, debris=91
+2026-10-21 08:24:37 [INFO] : root : Epoch 45 - détections validation : satellite=201, debris=38
+2026-10-21 08:24:42 [INFO] : root : Epoch 46 - détections validation : satellite=210, debris=29
+2026-10-21 08:24:47 [INFO] : root : Epoch 47 - détections validation : satellite=218, debris=21
+2026-10-21 08:24:52 [INFO] : root : Epoch 48 - détections validation : satellite=212, debris=27
+2026-10-21 08:24:57 [INFO] : root : Epoch 49 - détections validation : satellite=216, debris=23
+2026-10-21 08:25:02 [INFO] : root : Epoch 50 - détections validation : satellite=218, debris=21
+2026-10-21 08:25:07 [INFO] : root : Epoch 51 - détections validation : satellite=219, debris=20
+2026-10-21 08:25:12 [INFO] : root : Epoch 52 - détections validation : satellite=219, debris=20
+2026-10-21 08:25:16 [INFO] : root : Epoch 53 - détections validation : satellite=219, debris=20
+2026-10-21 08:25:21 [INFO] : root : Epoch 54 - détections validation : satellite=219, debris=20
+2026-10-21 08:25:26 [INFO] : root : Epoch 55 - détections validation : satellite=219, debris=20
+2026-10-21 08:25:31 [INFO] : root : Epoch 56 - détections validation : satellite=219, debris=20
+2026-10-21 08:25:36 [INFO] : root : Epoch 57 - détections validation : satellite=218, debris=21
+2026-10-21 08:25:41 [INFO] : root : Epoch 58 - détections validation : satellite=218, debris=21
+2026-10-21 08:25:46 [INFO] : root : Epoch 59 - détections validation : satellite=218, debris=21
+2026-10-21 08:25:51 [INFO] : root : Epoch 60 - détections validation : satellite=218, debris=21
+2026-10-21 08:25:56 [INFO] : root : Epoch 61 - détections validation : satellite=218, debris=21
+2026-10-21 08:26:01 [INFO] : root : Epoch 62 - détections validation : satellite=218, debris=21
+2026-10-21 08:26:06 [INFO] : root : Epoch 63 - détections validation : satellite=218, debris=21
+2026-10-21 08:26:11 [INFO] : root : Epoch 64 - détections validation : satellite=218, debris=21
+2026-10-21 08:26:15 [INFO] : root : Epoch 65 - détections validation : satellite=218, debris=21
+2026-10-21 08:26:20 [INFO] : root : Epoch 66 - détections validation : satellite=218, debris=21
+2026-10-21 08:26:25 [INFO] : root : Epoch 67 - détections validation : satellite=218, debris=21
+2026-10-21 08:26:30 [INFO] : root : Epoch 68 - détections validation : satellite=218, debris=21
+2026-10-21 08:26:35 [INFO] : root : Epoch 69 - détections validation : satellite=218, debris=21
+2026-10-21 08:26:40 [INFO] : root : Epoch 70 - détections validation : satellite=218, debris=21
+2026-10-21 08:26:40 [INFO] : root : Modèle ImageNet sauvegardé dans : models/satellite_debris_hard_70_retrain.keras
+2026-10-21 08:26:41 [INFO] : root : Seuil utilisé : 0.5
+2026-10-21 08:26:41 [INFO] : root : Résultats de classification sur le jeu de test (seuil = 0.500) :
+2026-10-21 08:26:41 [INFO] : root :               precision    recall  f1-score   support
+
+   satellite     0.9821    0.9821    0.9821       112
+      debris     0.8182    0.8182    0.8182        11
+
+    accuracy                         0.9675       123
+   macro avg     0.9002    0.9002    0.9002       123
+weighted avg     0.9675    0.9675    0.9675       123
+
+2026-10-21 08:26:41 [INFO] : root : PR-AUC debris (indépendante du seuil) : 0.8404
