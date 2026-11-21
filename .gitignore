@@ -1,2 +1,8 @@
 venv/
+.venv/
 sujet_projet/datasets
+/wandb/
+/UTILS/logs
+/utils/__pycache__
+/data
+*.zip

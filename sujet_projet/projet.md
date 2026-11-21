@@ -61,7 +61,6 @@ Développez un pipeline complet de deep learning en utilisant TensorFlow. Choisi
    - Les sources utilisées (documentation, articles, dépôts, assistants d’IA) et la contribution de chaque membre du binôme.  
 3. Une démo ou une application déployée (notebook exécutable, application web, interface en ligne de commande, etc.).  
 
----
 
 **Évaluation et rendu**  
 
