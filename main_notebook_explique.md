@@ -22,7 +22,7 @@ Les coordonnées YOLO sont normalisées entre `0` et `1`, avec un centre et des 
 Le notebook contient deux usages des données :
 
 1. un pipeline multi-tâches préparant une classe et une boîte englobante ;
-2. un pipeline de classification utilisant le jeu équilibré `train_50-50`.
+2. un pipeline de classification utilisant le jeu d'entraînement disponible dans `data/train`.
 
 > **Point important :** les cellules 12 et 14 préparent et visualisent simultanément la classe et la boîte englobante, mais la partie entraînement visible dans les cellules 18 à 28 recharge un modèle de **classification binaire**. Le modèle effectivement continué dans la cellule 24 ne reçoit donc que des images et des classes, pas les boîtes.
 
@@ -79,7 +79,7 @@ Elle affiche le nombre d'images `satellite` et `debris` dans `df_train`. Cette m
 
 ### Cellule 10 — Justification de l'équilibrage
 
-Cette cellule explique que les satellites sont beaucoup plus nombreux que les débris. Elle motive donc la création préalable d'un dossier `train_50-50`, dans lequel des rotations d'images de débris ont été utilisées pour obtenir une distribution plus équilibrée.
+Cette cellule explique que les satellites sont beaucoup plus nombreux que les débris. Elle présente la composition du jeu d'entraînement utilisé par le pipeline de classification.
 
 La cellule documente la stratégie, mais ne réalise pas elle-même les rotations.
 
@@ -119,7 +119,7 @@ Elle annonce la construction d'un réseau qui prédit une classe unique parmi `s
 
 ### Cellule 18 — Jeu de classification et rechargement du modèle
 
-Cette cellule importe Keras, définit un pipeline de classification sans boîte englobante, lit le jeu équilibré `train_50-50`, puis recharge `models/satellite_debris_best.keras`.
+Cette cellule importe Keras, définit un pipeline de classification sans boîte englobante, lit le jeu d'entraînement disponible dans `data/train`, puis recharge `models/satellite_debris_best.keras`.
 
 Le modèle rechargé est prêt à être évalué ou continué dans les cellules suivantes.
 
@@ -713,14 +713,14 @@ Mélange le dataset d'entraînement avec la même logique que le pipeline multi-
 Applique le prétraitement en parallèle, regroupe les images et précharge les lots avant de renvoyer le dataset.
 
 ```python
-df_train_5050 = create_dataset_dataframe('data/train_50-50/images')
+df_train = create_dataset_dataframe('data/train/images')
 ```
 
 Lit le répertoire équilibré préparé en amont.
 
 ```python
 train_classification_ds = df_to_classification_dataset(
-    df_train_5050,
+    df_train,
     is_training=True,
 )
 val_classification_ds = df_to_classification_dataset(df_val, is_training=False)
@@ -730,8 +730,8 @@ test_classification_ds = df_to_classification_dataset(df_test, is_training=False
 Construit le dataset d'entraînement équilibré et les datasets de validation/test à partir des données originales.
 
 ```python
-print(f"Train 50/50 : {len(df_train_5050)} images")
-print(df_train_5050['binary_class_name'].value_counts())
+print(f"Train : {len(df_train)} images")
+print(df_train['binary_class_name'].value_counts())
 ```
 
 Affiche la taille et la distribution du jeu équilibré.
@@ -1025,7 +1025,7 @@ Dans l'ordre, le notebook :
 5. inspecte le déséquilibre des classes ;
 6. construit un pipeline TensorFlow multi-sorties ;
 7. vérifie visuellement les boîtes ;
-8. construit un pipeline de classification sur `train_50-50` ;
+8. construit un pipeline de classification sur le jeu d'entraînement principal ;
 9. recharge `satellite_debris_best.keras` ;
 10. continue son entraînement avec arrêt anticipé ;
 11. sauvegarde `satellite_debris_best_v2.keras` ;
@@ -1040,6 +1040,5 @@ Dans l'ordre, le notebook :
 - Le pipeline des cellules 12 à 14 prépare des boîtes, tandis que l'entraînement des cellules 18 à 28 est un entraînement de classification uniquement.
 - Le modèle chargé doit avoir une sortie compatible avec `SparseCategoricalCrossentropy` et des labels entiers binaires.
 - La conversion `img_path.replace('images', 'labels')` suppose que les chemins suivent bien la structure `.../images/...` et `.../labels/...`.
-- Le dossier `data/valid_50-50/` contient une sélection fixe de 21 satellites et 21 débris provenant de `data/valid/`. Cette validation équilibrée est utilisée pour les courbes d'entraînement ; la validation originale reste évaluée séparément pour comparaison.
 - La cellule d'entraînement peut maintenant construire un MobileNetV2 avec `weights="imagenet"`. La base ImageNet est gelée au premier entraînement et une tête `Dense` à deux sorties est ajoutée pour la classification `satellite`/`debris`. Le prétraitement de classification utilise `keras.applications.mobilenet_v2.preprocess_input`.
 - La cellule d'initialisation détecte automatiquement les GPU TensorFlow disponibles, active la croissance progressive de leur mémoire et choisit `"/GPU:0"` pour l'entraînement. Si aucun GPU n'est détecté (par exemple sur une autre machine), elle utilise automatiquement `"/CPU:0"`.

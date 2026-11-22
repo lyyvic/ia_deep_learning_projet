@@ -1,18 +1,5 @@
 # Detection et classification d'objets spatiaux
 
-## Structure du rendu e-campus
-
-Le dossier `groupe_Parriault_Zory_Mangin_Lapointe/` est organisé pour la remise :
-
-- `README.md` : rapport du projet ;
-- `CONTRIBUTORS.md` : membres et responsabilités ;
-- `CHOIX_MODELES_ET_HYPERPARAMETRES.md` : justification des expérimentations ;
-- `ANALYSE_CONFORMITE.md` : vérification des critères du sujet ;
-- `src/` : notebooks, données, modèles, utilitaires et dépendances ;
-- `sujet_projet/` : documents fournis avec le sujet.
-
-Les fichiers du dossier racine du dépôt sont conservés afin de ne pas perdre l’historique de travail.
-
 Projet de deep learning realise avec TensorFlow dans le cadre du cours de 5e annee. Le domaine retenu est celui des **images** : le projet distingue les satellites des debris spatiaux, puis estime une boite englobante autour de l'objet.
 
 ## 1. Sujet, problematique et objectifs
