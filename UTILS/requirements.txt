@@ -1,8 +1,0 @@
-pandas
-matplotlib
-# CUDA libraries (pip wheels) exist only for Linux; TensorFlow falls back to CPU when no GPU is present
-tensorflow[and-cuda]==2.21.0 ; sys_platform == "linux"
-tensorflow==2.21.0 ; sys_platform != "linux"
-pyyaml
-scikit-learn
-wandb
