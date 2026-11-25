@@ -194,41 +194,41 @@ Ces variantes sont selectionnees avec la variable `LEARNING_RATE_MODE` ou la var
 
 ### Boites englobantes
 
-Le notebook reprend le modele de classification `satellite_debris_plateau_70_retrain.keras`, degel le backbone, puis ajoute une sortie boite. L'entrainement dure jusqu'a 60 epoques. Le modele est selectionne selon `val_bbox_output_iou`, avec EarlyStopping sur la meme metrique.
+Le notebook reprend le modele de classification `src/models/Class_Detection/satellite_debris_hard_70_retrain_v4.keras`, degel le backbone, puis ajoute une sortie boite. L'entrainement dure jusqu'a 60 epoques. Le modele est selectionne selon `val_bbox_output_iou`, avec EarlyStopping sur la meme metrique.
 
-Les versions cosinus, plateau et hardcoded sont disponibles dans `models/BBOX/`. Les noms historiques incluent notamment `cosin_decay`, `lronplateau`, `hardcoded` et `A_SUPPRIMER` ; ils doivent etre interpretes comme des essais, pas comme des resultats automatiquement garantis.
+Le modele final de localisation est `src/models/BBOX/satellite_debris_bbox_lronplateau.keras`.
 
 ## 6. Resultats sauvegardes
 
 ### Classification sur test
 
-La derniere evaluation sauvegardee dans le notebook, avec un seuil de decision fixe a 0.5, donne :
+L'evaluation finale sauvegardee dans `results/final/Classification/classification_final.json`, avec un seuil de decision fixe a 0.5, donne :
 
 | Classe | Precision | Rappel | F1 | Support |
 |---|---:|---:|---:|---:|
-| Satellite | 0.9739 | 1.0000 | 0.9868 | 112 |
-| Debris | 1.0000 | 0.7273 | 0.8421 | 11 |
-| Accuracy globale | - | - | 0.9756 | 123 |
+| Satellite | 0.9825 | 1.0000 | 0.9912 | 112 |
+| Debris | 1.0000 | 0.8182 | 0.9000 | 11 |
 
 Autres mesures :
 
-- 8 debris sur 11 sont detectes au seuil 0.5 ;
+- accuracy globale : 0.9837 ;
+- 9 debris sur 11 sont detectes au seuil 0.5 ;
 - aucun satellite n'est confondu avec un debris dans cette sortie sauvegardee ;
-- PR-AUC debris : 0.8720 ;
-- 3 debris sur 11 ne sont pas detectes.
+- PR-AUC debris : 0.9202 ;
+- 2 debris sur 11 ne sont pas detectes.
 
 Ces chiffres sont a lire avec prudence : le support debris du test ne represente que 11 images.
 
 ### Localisation sur test
 
-L'evaluation du modele multi-taches sauvegarde dans le notebook donne :
+L'evaluation finale sauvegardee dans `results/final/BBOX/bbox_final.json` donne :
 
-- accuracy de classe : 98.37 % ;
-- IoU moyenne : 0.6499 ;
-- accuracy des boites : 86.18 % pour IoU >= 0.5 ;
-- MAE des boites : 0.0487.
+- accuracy de classe : 97.56 % ;
+- IoU moyenne : 0.6604 (mediane : 0.6945) ;
+- accuracy des boites : 87.80 % pour IoU >= 0.5 ;
+- detection complete (classe correcte et IoU >= 0.5) : 87.80 %.
 
-Cette sortie est issue de l'evaluation test du notebook de boites avec un modele charge depuis `A_SUPPRIMER.keras` puis compile pour l'evaluation. Elle constitue une preuve de fonctionnement, mais ne remplace pas une consolidation reproductible des configurations des quatre variantes.
+L'IoU moyenne est de 0.3566 pour les debris et de 0.6693 pour les satellites. Les resultats des comparaisons exploratoires de variantes sur le test sont descriptifs ; la selection des modeles repose sur les metriques de validation.
 
 ## 7. Seuil de decision
 
@@ -276,14 +276,14 @@ Les observations disponibles dans le notebook montrent que l'IoU peut rester moy
 4. Tester EfficientNet ou un transfert d'apprentissage deux phases.
 5. Degeler progressivement le backbone et comparer plusieurs taux d'apprentissage.
 6. Consolider les resultats des variantes dans un tableau `CSV/JSON` produit automatiquement.
-7. Ajouter des courbes recall/precision, des matrices de confusion et des exemples faux positifs/faux negatifs.
+7. Approfondir la comparaison des courbes, matrices de confusion et exemples d'erreurs entre les configurations.
 8. Evaluer au niveau du pixel ou de l'objet avec un vrai detecteur multi-boites.
 9. Ajouter des tests unitaires sur la conversion YOLO et les dimensions des boites.
 10. Ajouter une cellule ou application qui charge une nouvelle image locale et affiche classe, probabilite, boite et score IoU lorsqu'une verite terrain est disponible.
 
 ## 11. IA symbolique (bonus)
 
-Une composante symbolique est implémentée dans [UTILS/symbolic_rules.py](UTILS/symbolic_rules.py). Elle prend la probabilité de debris et la boîte prédite, puis applique les règles suivantes :
+Une composante symbolique est implémentée dans [src/UTILS/symbolic_rules.py](src/UTILS/symbolic_rules.py). Elle prend la probabilité de debris et la boîte prédite, puis applique les règles suivantes :
 
 - vérification que les quatre coordonnées de la boîte sont dans `[0,1]` ;
 - vérification que `ymax >= ymin` et `xmax >= xmin` ;
@@ -296,16 +296,13 @@ La fonction `apply_symbolic_rules()` retourne le statut `confiant`, `incertain` 
 
 ## 12. Demonstration
 
-Les notebooks constituent la demonstration actuelle :
+Le notebook [src/demo.ipynb](src/demo.ipynb) choisit aleatoirement trois satellites et trois debris dans le jeu de validation. Le modele `satellite_debris_bbox_lronplateau.keras` predit leur classe binaire et leur boite. La boite reelle est tracee en blanc pointille ; la boite predite est verte si l'IoU est au moins 0.5, jaune entre 0.3 et 0.5, et rouge en dessous de 0.3. Le titre devient rouge si la classe predite differe de la classe reelle, et une legende explique les boites.
 
 ```bash
-jupyter lab Class_detection_training.ipynb
-jupyter lab bounding_box_training.ipynb
+jupyter lab src/demo.ipynb
 ```
 
-Le notebook de classification affiche notamment les courbes, les seuils, les rapports de classification et les matrices de confusion. Le notebook de boites affiche les boites vraies et predites.
-
-Pour une demonstration interactive sur une nouvelle image, ajouter une cellule finale qui prend le chemin d'un fichier JPEG, applique le meme pretraitement que `df_to_classification_dataset()`, puis affiche la classe, la probabilite de debris et eventuellement la boite predite.
+La demonstration utilise des images annotees de validation ; elle ne constitue pas encore une interface d'inference pour des images arbitraires fournies par l'utilisateur.
 
 ## 13. Reproduction
 
@@ -323,37 +320,31 @@ Le fichier [requirements.txt](requirements.txt) contient les dependances princip
 Depuis la racine du depot :
 
 ```bash
-./setup.sh
+./src/UTILS/setup.sh
 source .venv/bin/activate
 jupyter lab
 ```
 
-Sur Windows ou dans un environnement sans Bash, creer un environnement virtuel puis installer les dependances :
-
-```bash
-python -m venv .venv
-source .venv/bin/activate
-pip install -r requirements.txt
-```
+Le script se trouve dans `src/UTILS/setup.sh` et s'execute sous Linux ou WSL.
 
 ### Execution
 
 ```bash
-jupyter lab Class_detection_training.ipynb
-jupyter lab bounding_box_training.ipynb
+PYTHONPATH=src jupyter lab src/Class_detection_training.ipynb
+PYTHONPATH=src jupyter lab src/bounding_box_training.ipynb
 ```
 
-Exécuter les notebooks depuis la racine du depot. Les chemins `data/`, `models/` et `UTILS/` sont relatifs a cette racine.
+Exécuter les notebooks depuis la racine du depot. Les chemins `data/`, `src/models/` et `src/UTILS/` sont relatifs a cette racine.
 
 Les modes d'entrainement peuvent etre lancees avec :
 
 ```bash
-LEARNING_RATE_MODE=hardcoded jupyter lab Class_detection_training.ipynb
-LEARNING_RATE_MODE=plateau jupyter lab Class_detection_training.ipynb
-LEARNING_RATE_MODE=cosine_decay jupyter lab Class_detection_training.ipynb
+PYTHONPATH=src LEARNING_RATE_MODE=hardcoded jupyter lab src/Class_detection_training.ipynb
+PYTHONPATH=src LEARNING_RATE_MODE=plateau jupyter lab src/Class_detection_training.ipynb
+PYTHONPATH=src LEARNING_RATE_MODE=cosine_decay jupyter lab src/Class_detection_training.ipynb
 ```
 
-Les poids sont sauvegardes sous `models/Class_Detection/` et `models/BBOX/`.
+Les poids sont sauvegardes sous `src/models/Class_Detection/` et `src/models/BBOX/`.
 
 ## 14. Structure du depot
 
@@ -361,22 +352,18 @@ Les poids sont sauvegardes sous `models/Class_Detection/` et `models/BBOX/`.
 .
 ├── README.md
 ├── CONTRIBUTORS.md
-├── Class_detection_training.ipynb
-├── bounding_box_training.ipynb
-├── setup.sh
+├── CHOIX_MODELES_ET_HYPERPARAMETRES.md
 ├── requirements.txt
 ├── data/
-│   ├── data.yaml
-│   ├── README.dataset.txt
-│   ├── README.roboflow.txt
-│   ├── train/
-│   ├── valid/
-│   └── test/
-├── models/
-│   ├── Class_Detection/
-│   └── BBOX/
-├── UTILS/
-└── sujet_projet/
+├── results/final/
+└── src/
+    ├── Class_detection_training.ipynb
+    ├── bounding_box_training.ipynb
+    ├── demo.ipynb
+    ├── models/
+    └── UTILS/
+        ├── setup.sh
+        └── symbolic_rules.py
 ```
 
 ## 15. Sources utilisees
@@ -388,9 +375,7 @@ Les poids sont sauvegardes sous `models/Class_Detection/` et `models/BBOX/`.
 - Weights & Biases : suivi optionnel des essais et courbes d'entrainement.
 - Roboflow : export YOLOv8, orientation, redimensionnement et augmentations.
 - Ressources du cours et notebooks d'exemple fournis dans `sujet_projet/`.
-- Assistance IA : analyse du depot, aide a la structuration du rapport et verification des sections du sujet. Le code, les executions, les choix d'architecture et les conclusions restent sous la responsabilite des quatre membres du groupe.
-
-Les reutilisations exactes de fonctions ou passages de code issus d'autres depots doivent etre ajoutees dans cette section avant la remise.
+- Assistance IA : analyse du depot, aide a la redaction et realisation de la demonstration. Les experiences et les resultats sont sous la responsabilite des quatre membres du groupe.
 
 ## 16. Contribution des membres
 
@@ -401,13 +386,13 @@ Le projet est réalisé par quatre membres :
 - Thomas Mangin ;
 - Matthias Lapointe.
 
-La répartition détaillée est présente dans Voir [CONTRIBUTORS.md](CONTRIBUTORS.md) et traite : données, prétraitement, classification, boîtes, entraînement, évaluation, analyse des erreurs, documentation, démonstration et IA symbolique.
+La répartition détaillée est présentée dans [CONTRIBUTORS.md](CONTRIBUTORS.md) et couvre les données, le prétraitement, les modèles, l'évaluation, la documentation, la démonstration et l'IA symbolique.
 
 
-Les décisions finales provisoires, les variantes testées et tous les hyperparamètres sont centralisés dans [CHOIX_MODELES_ET_HYPERPARAMETRES.md](CHOIX_MODELES_ET_HYPERPARAMETRES.md).
+Les configurations et les hyperparamètres des modèles sont détaillés dans [CHOIX_MODELES_ET_HYPERPARAMETRES.md](CHOIX_MODELES_ET_HYPERPARAMETRES.md).
 
-Les sections finales des notebooks sont organisées ainsi :
+Les notebooks d'entraînement produisent notamment :
 
-- classification : chargement de `satellite_debris_cosin_70_retrain.keras`, rapport test, matrice de confusion, courbes et exemples de faux positifs/faux négatifs ;
-- boîtes : chargement de `satellite_debris_bbox_lronplateau.keras`, matrice de confusion, distribution des IoU, courbes et exemples de détections ou boîtes erronées ;
+- classification : rapport de test, matrice de confusion, courbes et exemples de faux positifs/faux négatifs ;
+- boîtes : matrice de confusion, distribution des IoU, courbes et exemples de détections ou boîtes erronées ;
 - tous les fichiers produits par ces sections sont dirigés vers `results/final/`.

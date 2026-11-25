@@ -2,7 +2,7 @@
 # Creates .venv, installs requirements and checks which device TensorFlow uses.
 # Works on machines with or without an NVIDIA GPU.
 set -euo pipefail
-cd "$(dirname "$0")"
+cd "$(dirname "$0")/../.."
 
 [ -d .venv ] || python3 -m venv .venv
 .venv/bin/pip install --upgrade pip

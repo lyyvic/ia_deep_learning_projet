@@ -6,3 +6,4 @@ tensorflow==2.21.0 ; sys_platform != "linux"
 pyyaml
 scikit-learn
 wandb
+jupyterlab

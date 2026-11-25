@@ -2,6 +2,7 @@ venv/
 .venv/
 sujet_projet/datasets
 /wandb/
+/src/wandb/
 /UTILS/logs
 /utils/__pycache__
 /data
