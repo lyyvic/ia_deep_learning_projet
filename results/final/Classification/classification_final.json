@@ -1,0 +1,44 @@
+{
+  "model": "src/models/Class_Detection/satellite_debris_cosin_70_retrain.keras",
+  "decision_threshold": 0.5,
+  "test_support": 123,
+  "test_debris_support": 11,
+  "classification_report": {
+    "satellite": {
+      "precision": 0.9824561403508771,
+      "recall": 1.0,
+      "f1-score": 0.9911504424778761,
+      "support": 112.0
+    },
+    "debris": {
+      "precision": 1.0,
+      "recall": 0.8181818181818182,
+      "f1-score": 0.9,
+      "support": 11.0
+    },
+    "accuracy": 0.983739837398374,
+    "macro avg": {
+      "precision": 0.9912280701754386,
+      "recall": 0.9090909090909092,
+      "f1-score": 0.9455752212389381,
+      "support": 123.0
+    },
+    "weighted avg": {
+      "precision": 0.9840251034089288,
+      "recall": 0.983739837398374,
+      "f1-score": 0.9829987768904238,
+      "support": 123.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      112,
+      0
+    ],
+    [
+      2,
+      9
+    ]
+  ],
+  "pr_auc_debris": 0.9202020202020202
+}

@@ -1,0 +1,768 @@
+# TESTPILOT_RUN_PPID=135377
+2026-11-25 08:47:37 [INFO] : root : Entraînement sur GPU : ['/physical_device:GPU:0']
+2026-11-25 08:47:37 [INFO] : root : TensorFlow : 2.21.0
+2026-11-25 08:47:37 [INFO] : root : Classes originales : ['cheops', 'debris', 'double_start', 'earth_observation_sat_1', 'lisa_pathfinder', 'proba_2', 'proba_3_csc', 'proba_3_ocs', 'smart_1', 'soho', 'xmm_newton']
+2026-11-25 08:47:37 [INFO] : root : Classes du modèle : ['satellite', 'debris']
+2026-11-25 08:49:35 [INFO] : root : Entraînement sur GPU : ['/physical_device:GPU:0']
+2026-11-25 08:49:35 [INFO] : root : TensorFlow : 2.21.0
+2026-11-25 08:49:35 [INFO] : root : Classes originales : ['cheops', 'debris', 'double_start', 'earth_observation_sat_1', 'lisa_pathfinder', 'proba_2', 'proba_3_csc', 'proba_3_ocs', 'smart_1', 'soho', 'xmm_newton']
+2026-11-25 08:49:35 [INFO] : root : Classes du modèle : ['satellite', 'debris']
+2026-11-25 08:49:35 [INFO] : root : Train : 2105 images
+2026-11-25 08:49:35 [INFO] : root : Val   : 239 images
+2026-11-25 08:49:35 [INFO] : root : Test  : 123 images
+2026-11-25 08:49:35 [INFO] : root : Répartition train :
+binary_class_name
+satellite    1919
+debris        186
+Name: count, dtype: int64
+2026-11-25 08:50:38 [INFO] : root : Répertoire projet utilisé : /home/jzory/Documents/leo
+2026-11-25 08:50:38 [INFO] : root : Entraînement sur GPU : ['/physical_device:GPU:0']
+2026-11-25 08:50:38 [INFO] : root : TensorFlow : 2.21.0
+2026-11-25 08:50:38 [INFO] : root : Classes originales : ['cheops', 'debris', 'double_start', 'earth_observation_sat_1', 'lisa_pathfinder', 'proba_2', 'proba_3_csc', 'proba_3_ocs', 'smart_1', 'soho', 'xmm_newton']
+2026-11-25 08:50:38 [INFO] : root : Classes du modèle : ['satellite', 'debris']
+2026-11-25 08:50:42 [INFO] : root : Train : 2105 images
+2026-11-25 08:50:42 [INFO] : root : Val   : 239 images
+2026-11-25 08:50:42 [INFO] : root : Test  : 123 images
+2026-11-25 08:50:42 [INFO] : root : Répartition train :
+binary_class_name
+satellite    1919
+debris        186
+Name: count, dtype: int64
+2026-11-25 08:50:50 [INFO] : root : Entraînement sur GPU : ['/physical_device:GPU:0']
+2026-11-25 08:50:50 [INFO] : root : TensorFlow : 2.21.0
+2026-11-25 08:50:50 [INFO] : root : Classes originales : ['cheops', 'debris', 'double_start', 'earth_observation_sat_1', 'lisa_pathfinder', 'proba_2', 'proba_3_csc', 'proba_3_ocs', 'smart_1', 'soho', 'xmm_newton']
+2026-11-25 08:50:50 [INFO] : root : Classes du modèle : ['satellite', 'debris']
+2026-11-25 08:50:50 [INFO] : root : Train : 2105 images
+2026-11-25 08:50:50 [INFO] : root : Val   : 239 images
+2026-11-25 08:50:50 [INFO] : root : Test  : 123 images
+2026-11-25 08:50:50 [INFO] : root : Répartition train :
+binary_class_name
+satellite    1919
+debris        186
+Name: count, dtype: int64
+2026-11-25 08:51:23 [INFO] : root : Entraînement sur GPU : ['/physical_device:GPU:0']
+2026-11-25 08:51:23 [INFO] : root : TensorFlow : 2.21.0
+2026-11-25 08:51:23 [INFO] : root : Classes originales : ['cheops', 'debris', 'double_start', 'earth_observation_sat_1', 'lisa_pathfinder', 'proba_2', 'proba_3_csc', 'proba_3_ocs', 'smart_1', 'soho', 'xmm_newton']
+2026-11-25 08:51:23 [INFO] : root : Classes du modèle : ['satellite', 'debris']
+2026-11-25 08:51:23 [INFO] : root : Train : 2105 images
+2026-11-25 08:51:23 [INFO] : root : Val   : 239 images
+2026-11-25 08:51:23 [INFO] : root : Test  : 123 images
+2026-11-25 08:51:23 [INFO] : root : Répartition train :
+binary_class_name
+satellite    1919
+debris        186
+Name: count, dtype: int64
+2026-11-25 08:51:24 [INFO] : root : Mode du learning rate : cosine_decay (initial=0.001000, epochs=60)
+2026-11-25 08:52:04 [INFO] : root : Epoch 1 - Réel : satellite | Prévu : debris (p_debris=1.00) | IoU=0.07 -> boîte mauvaise
+2026-11-25 08:52:06 [INFO] : root : Epoch 2 - Réel : satellite | Prévu : satellite (p_debris=0.00) | IoU=0.00 -> boîte mauvaise
+2026-11-25 08:52:08 [INFO] : root : Epoch 3 - Réel : satellite | Prévu : satellite (p_debris=0.00) | IoU=0.00 -> boîte mauvaise
+2026-11-25 08:52:10 [INFO] : root : Epoch 4 - Réel : satellite | Prévu : debris (p_debris=1.00) | IoU=0.19 -> boîte mauvaise
+2026-11-25 08:52:12 [INFO] : root : Epoch 5 - Réel : satellite | Prévu : debris (p_debris=1.00) | IoU=0.02 -> boîte mauvaise
+2026-11-25 08:52:14 [INFO] : root : Epoch 6 - Réel : satellite | Prévu : debris (p_debris=1.00) | IoU=0.00 -> boîte mauvaise
+2026-11-25 08:52:16 [INFO] : root : Epoch 7 - Réel : satellite | Prévu : debris (p_debris=1.00) | IoU=0.37 -> boîte mauvaise
+2026-11-25 08:52:17 [INFO] : root : Epoch 8 - Réel : satellite | Prévu : debris (p_debris=0.80) | IoU=0.00 -> boîte mauvaise
+2026-11-25 08:52:19 [INFO] : root : Epoch 9 - Réel : satellite | Prévu : satellite (p_debris=0.16) | IoU=0.00 -> boîte mauvaise
+2026-11-25 08:52:21 [INFO] : root : Epoch 10 - Réel : satellite | Prévu : satellite (p_debris=0.00) | IoU=0.04 -> boîte mauvaise
+2026-11-25 08:52:22 [INFO] : root : Epoch 11 - Réel : satellite | Prévu : satellite (p_debris=0.00) | IoU=0.39 -> boîte mauvaise
+2026-11-25 08:52:24 [INFO] : root : Epoch 12 - Réel : satellite | Prévu : satellite (p_debris=0.00) | IoU=0.21 -> boîte mauvaise
+2026-11-25 08:52:26 [INFO] : root : Epoch 13 - Réel : satellite | Prévu : satellite (p_debris=0.00) | IoU=0.19 -> boîte mauvaise
+2026-11-25 08:52:27 [INFO] : root : Epoch 14 - Réel : satellite | Prévu : satellite (p_debris=0.00) | IoU=0.08 -> boîte mauvaise
+2026-11-25 08:52:29 [INFO] : root : Epoch 15 - Réel : satellite | Prévu : satellite (p_debris=0.00) | IoU=0.14 -> boîte mauvaise
+2026-11-25 08:52:31 [INFO] : root : Epoch 16 - Réel : satellite | Prévu : satellite (p_debris=0.00) | IoU=0.33 -> boîte mauvaise
+2026-11-25 08:52:33 [INFO] : root : Epoch 17 - Réel : satellite | Prévu : satellite (p_debris=0.00) | IoU=0.24 -> boîte mauvaise
+2026-11-25 08:52:35 [INFO] : root : Epoch 18 - Réel : satellite | Prévu : satellite (p_debris=0.00) | IoU=0.51 -> boîte bonne
+2026-11-25 08:52:37 [INFO] : root : Epoch 19 - Réel : satellite | Prévu : satellite (p_debris=0.00) | IoU=0.36 -> boîte mauvaise
+2026-11-25 08:52:39 [INFO] : root : Epoch 20 - Réel : satellite | Prévu : satellite (p_debris=0.00) | IoU=0.32 -> boîte mauvaise
+2026-11-25 08:52:40 [INFO] : root : Epoch 21 - Réel : satellite | Prévu : satellite (p_debris=0.00) | IoU=0.58 -> boîte bonne
+2026-11-25 08:52:42 [INFO] : root : Epoch 22 - Réel : satellite | Prévu : satellite (p_debris=0.00) | IoU=0.61 -> boîte bonne
+2026-11-25 08:52:44 [INFO] : root : Epoch 23 - Réel : satellite | Prévu : satellite (p_debris=0.00) | IoU=0.39 -> boîte mauvaise
+2026-11-25 08:52:46 [INFO] : root : Epoch 24 - Réel : satellite | Prévu : satellite (p_debris=0.00) | IoU=0.64 -> boîte bonne
+2026-11-25 08:52:48 [INFO] : root : Epoch 25 - Réel : satellite | Prévu : satellite (p_debris=0.00) | IoU=0.54 -> boîte bonne
+2026-11-25 08:52:49 [INFO] : root : Epoch 26 - Réel : satellite | Prévu : satellite (p_debris=0.00) | IoU=0.58 -> boîte bonne
+2026-11-25 08:52:51 [INFO] : root : Epoch 27 - Réel : satellite | Prévu : satellite (p_debris=0.00) | IoU=0.62 -> boîte bonne
+2026-11-25 08:52:53 [INFO] : root : Epoch 28 - Réel : satellite | Prévu : satellite (p_debris=0.00) | IoU=0.84 -> boîte bonne
+2026-11-25 08:52:55 [INFO] : root : Epoch 29 - Réel : satellite | Prévu : satellite (p_debris=0.00) | IoU=0.64 -> boîte bonne
+2026-11-25 08:52:57 [INFO] : root : Epoch 30 - Réel : satellite | Prévu : satellite (p_debris=0.00) | IoU=0.76 -> boîte bonne
+2026-11-25 08:52:58 [INFO] : root : Epoch 31 - Réel : satellite | Prévu : satellite (p_debris=0.00) | IoU=0.67 -> boîte bonne
+2026-11-25 08:53:00 [INFO] : root : Epoch 32 - Réel : satellite | Prévu : satellite (p_debris=0.00) | IoU=0.64 -> boîte bonne
+2026-11-25 08:53:02 [INFO] : root : Epoch 33 - Réel : satellite | Prévu : satellite (p_debris=0.00) | IoU=0.47 -> boîte mauvaise
+2026-11-25 08:53:04 [INFO] : root : Epoch 34 - Réel : satellite | Prévu : satellite (p_debris=0.00) | IoU=0.50 -> boîte bonne
+2026-11-25 08:53:06 [INFO] : root : Epoch 35 - Réel : satellite | Prévu : satellite (p_debris=0.00) | IoU=0.54 -> boîte bonne
+2026-11-25 08:53:07 [INFO] : root : Epoch 36 - Réel : satellite | Prévu : satellite (p_debris=0.00) | IoU=0.63 -> boîte bonne
+2026-11-25 08:53:09 [INFO] : root : Epoch 37 - Réel : satellite | Prévu : satellite (p_debris=0.00) | IoU=0.59 -> boîte bonne
+2026-11-25 08:53:11 [INFO] : root : Epoch 38 - Réel : satellite | Prévu : satellite (p_debris=0.00) | IoU=0.51 -> boîte bonne
+2026-11-25 08:53:12 [INFO] : root : Epoch 39 - Réel : satellite | Prévu : satellite (p_debris=0.00) | IoU=0.76 -> boîte bonne
+2026-11-25 08:53:14 [INFO] : root : Epoch 40 - Réel : debris | Prévu : debris (p_debris=1.00) | IoU=0.33 -> boîte mauvaise
+2026-11-25 08:53:16 [INFO] : root : Epoch 41 - Réel : debris | Prévu : debris (p_debris=1.00) | IoU=0.60 -> boîte bonne
+2026-11-25 08:53:18 [INFO] : root : Epoch 42 - Réel : satellite | Prévu : satellite (p_debris=0.00) | IoU=0.61 -> boîte bonne
+2026-11-25 08:53:19 [INFO] : root : Epoch 43 - Réel : satellite | Prévu : satellite (p_debris=0.00) | IoU=0.47 -> boîte mauvaise
+2026-11-25 08:53:21 [INFO] : root : Epoch 44 - Réel : satellite | Prévu : satellite (p_debris=0.00) | IoU=0.88 -> boîte bonne
+2026-11-25 08:53:23 [INFO] : root : Epoch 45 - Réel : satellite | Prévu : satellite (p_debris=0.00) | IoU=0.65 -> boîte bonne
+2026-11-25 08:53:25 [INFO] : root : Epoch 46 - Réel : satellite | Prévu : satellite (p_debris=0.00) | IoU=0.70 -> boîte bonne
+2026-11-25 08:53:27 [INFO] : root : Epoch 47 - Réel : satellite | Prévu : satellite (p_debris=0.00) | IoU=0.75 -> boîte bonne
+2026-11-25 08:53:28 [INFO] : root : Epoch 48 - Réel : satellite | Prévu : satellite (p_debris=0.00) | IoU=0.66 -> boîte bonne
+2026-11-25 08:53:30 [INFO] : root : Epoch 49 - Réel : satellite | Prévu : satellite (p_debris=0.00) | IoU=0.67 -> boîte bonne
+2026-11-25 08:53:32 [INFO] : root : Epoch 50 - Réel : satellite | Prévu : satellite (p_debris=0.00) | IoU=0.69 -> boîte bonne
+2026-11-25 08:53:33 [INFO] : root : Epoch 51 - Réel : satellite | Prévu : satellite (p_debris=0.00) | IoU=0.73 -> boîte bonne
+2026-11-25 08:53:35 [INFO] : root : Epoch 52 - Réel : satellite | Prévu : satellite (p_debris=0.00) | IoU=0.57 -> boîte bonne
+2026-11-25 08:53:37 [INFO] : root : Epoch 53 - Réel : satellite | Prévu : satellite (p_debris=0.00) | IoU=0.90 -> boîte bonne
+2026-11-25 08:53:39 [INFO] : root : Epoch 54 - Réel : debris | Prévu : debris (p_debris=1.00) | IoU=0.34 -> boîte mauvaise
+2026-11-25 08:53:40 [INFO] : root : Epoch 55 - Réel : satellite | Prévu : satellite (p_debris=0.00) | IoU=0.76 -> boîte bonne
+2026-11-25 08:53:42 [INFO] : root : Epoch 56 - Réel : debris | Prévu : debris (p_debris=1.00) | IoU=0.47 -> boîte mauvaise
+2026-11-25 08:53:44 [INFO] : root : Epoch 57 - Réel : debris | Prévu : debris (p_debris=1.00) | IoU=0.48 -> boîte mauvaise
+2026-11-25 08:53:46 [INFO] : root : Epoch 58 - Réel : satellite | Prévu : satellite (p_debris=0.00) | IoU=0.74 -> boîte bonne
+2026-11-25 08:53:48 [INFO] : root : Epoch 59 - Réel : satellite | Prévu : satellite (p_debris=0.00) | IoU=0.67 -> boîte bonne
+2026-11-25 08:53:49 [INFO] : root : Epoch 60 - Réel : satellite | Prévu : satellite (p_debris=0.00) | IoU=0.59 -> boîte bonne
+2026-11-25 08:53:54 [INFO] : root : Métriques test : {'bbox_output_box_accuracy': 0.8780487775802612, 'bbox_output_iou': 0.6810001134872437, 'bbox_output_loss': 0.0031333130318671465, 'bbox_output_mae': 0.045168694108724594, 'class_output_accuracy': 0.9756097793579102, 'class_output_loss': 0.21868695318698883, 'loss': 0.24331948161125183}
+2026-11-25 08:53:57 [INFO] : root : Classification sur le test :
+              precision    recall  f1-score   support
+
+   satellite     0.9739    1.0000    0.9868       112
+      debris     1.0000    0.7273    0.8421        11
+
+    accuracy                         0.9756       123
+   macro avg     0.9870    0.8636    0.9144       123
+weighted avg     0.9762    0.9756    0.9738       123
+
+2026-11-25 08:53:57 [INFO] : root : IoU test : moyenne=0.681, médiane=0.722
+2026-11-25 08:53:57 [INFO] : root : Boîtes correctes (IoU >= 0.5) : 87.8 %
+2026-11-25 08:53:57 [INFO] : root : Détections correctes (classe + boîte) : 87.8 %
+2026-11-25 08:53:57 [INFO] : root :   satellite : IoU moyenne=0.706, boîtes correctes=92.0 %
+2026-11-25 08:53:57 [INFO] : root :   debris : IoU moyenne=0.428, boîtes correctes=45.5 %
+2026-11-25 08:56:19 [WARNING] : tensorflow : 5 out of the last 18 calls to <function TensorFlowTrainer.make_predict_function.<locals>.one_step_on_data_distributed at 0x7aa36fd709a0> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
+2026-11-25 08:56:21 [WARNING] : tensorflow : 5 out of the last 17 calls to <function TensorFlowTrainer.make_predict_function.<locals>.one_step_on_data_distributed at 0x7aa36fab05e0> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
+2026-11-25 08:58:38 [INFO] : root : Résultats boîtes retenues : {'model': 'src/models/BBOX/satellite_debris_bbox_lronplateau.keras', 'iou_threshold': 0.5, 'test_support': 123, 'class_report': {'satellite': {'precision': 0.9739130434782609, 'recall': 1.0, 'f1-score': 0.986784140969163, 'support': 112.0}, 'debris': {'precision': 1.0, 'recall': 0.7272727272727273, 'f1-score': 0.8421052631578947, 'support': 11.0}, 'accuracy': 0.975609756097561, 'macro avg': {'precision': 0.9869565217391305, 'recall': 0.8636363636363636, 'f1-score': 0.9144447020635289, 'support': 123.0}, 'weighted avg': {'precision': 0.9762460233297986, 'recall': 0.975609756097561, 'f1-score': 0.9738453795388871, 'support': 123.0}}, 'confusion_matrix': [[112, 0], [3, 8]], 'iou_mean': 0.6603512753073763, 'iou_median': 0.6944997310638428, 'boxes_correct_at_0_5': 0.8780487804878049, 'complete_detections_correct': 0.8780487804878049}
+2026-11-25 08:58:39 [INFO] : root : Erreurs de classe boîtes : 3
+2026-11-25 08:58:39 [INFO] : root : Boîtes avec IoU < 0.5 : 15
+2026-11-25 09:03:10 [INFO] : root : Analyse des performances selon la difficulté :
+ facteur      catégorie  nombre  IoU_moyenne  IoU_médiane  boîtes_IoU_>=_0.5_%  détection_correcte_%
+ surface        >= 15 %      65       0.7425       0.7531                95.38                 95.38
+ surface         5-15 %      45       0.6509       0.6984                84.44                 84.44
+ surface          1-5 %      12       0.5165       0.6354                66.67                 66.67
+ surface          < 1 %       1       0.0101       0.0101                 0.00                  0.00
+position       centrale      89       0.6657       0.7145                85.39                 85.39
+position proche du bord      34       0.7211       0.7229                94.12                 94.12
+  classe      satellite     112       0.7058       0.7305                91.96                 91.96
+  classe         debris      11       0.4280       0.4467                45.45                 45.45
+2026-11-25 09:03:10 [INFO] : root : Objets petits (< 5 % de l'image) : 13 ; IoU moyenne=0.478
+2026-11-25 09:03:10 [INFO] : root : Objets proches du bord (< 5 % de marge) : 34 ; IoU moyenne=0.721
+2026-11-25 09:03:10 [INFO] : root : Erreurs de classe : 3 ; IoU moyenne sur ces erreurs=0.003
+2026-11-25 09:09:28 [INFO] : root : Entraînement sur GPU : ['NVIDIA GeForce RTX 5090']
+2026-11-25 09:09:28 [INFO] : root : TensorFlow version: 2.21.0
+2026-11-25 09:09:28 [INFO] : root : Classes originales : ['cheops', 'debris', 'double_start', 'earth_observation_sat_1', 'lisa_pathfinder', 'proba_2', 'proba_3_csc', 'proba_3_ocs', 'smart_1', 'soho', 'xmm_newton']
+2026-11-25 09:09:28 [INFO] : root : Classes du modèle : ['satellite', 'debris']
+2026-11-25 09:09:28 [INFO] : root : Train : 2105 images
+2026-11-25 09:09:28 [INFO] : root : Val   : 239 images
+2026-11-25 09:09:28 [INFO] : root : Test  : 123 images
+2026-11-25 09:09:28 [INFO] : root : Distribution binaire (Train) :
+2026-11-25 09:09:28 [INFO] : root : binary_class_name
+satellite    1919
+debris        186
+Name: count, dtype: int64
+2026-11-25 09:09:28 [INFO] : root : Distribution des classes binaires (Train) :
+2026-11-25 09:09:28 [INFO] : root : binary_class_name
+satellite    1919
+debris        186
+Name: count, dtype: int64
+2026-11-25 09:09:28 [INFO] : root : Train : 2105 images
+2026-11-25 09:09:28 [INFO] : root : binary_class_name
+satellite    1919
+debris        186
+Name: count, dtype: int64
+2026-11-25 09:09:28 [INFO] : root : Validation : 239 images
+2026-11-25 09:09:28 [INFO] : root : binary_class_name
+satellite    218
+debris        21
+Name: count, dtype: int64
+2026-11-25 09:09:28 [INFO] : root : Poids de classe :
+2026-11-25 09:11:15 [INFO] : root : Répertoire projet utilisé : /home/jzory/Documents/leo
+2026-11-25 09:11:15 [INFO] : root : Entraînement sur GPU : ['NVIDIA GeForce RTX 5090']
+2026-11-25 09:11:15 [INFO] : root : TensorFlow version: 2.21.0
+2026-11-25 09:11:15 [INFO] : root : Classes originales : ['cheops', 'debris', 'double_start', 'earth_observation_sat_1', 'lisa_pathfinder', 'proba_2', 'proba_3_csc', 'proba_3_ocs', 'smart_1', 'soho', 'xmm_newton']
+2026-11-25 09:11:15 [INFO] : root : Classes du modèle : ['satellite', 'debris']
+2026-11-25 09:11:15 [INFO] : root : Train : 2105 images
+2026-11-25 09:11:15 [INFO] : root : Val   : 239 images
+2026-11-25 09:11:15 [INFO] : root : Test  : 123 images
+2026-11-25 09:11:15 [INFO] : root : Distribution binaire (Train) :
+2026-11-25 09:11:15 [INFO] : root : binary_class_name
+satellite    1919
+debris        186
+Name: count, dtype: int64
+2026-11-25 09:11:15 [INFO] : root : Distribution des classes binaires (Train) :
+2026-11-25 09:11:15 [INFO] : root : binary_class_name
+satellite    1919
+debris        186
+Name: count, dtype: int64
+2026-11-25 09:11:19 [INFO] : root : Répertoire projet utilisé : /home/jzory/Documents/leo
+2026-11-25 09:11:19 [INFO] : root : Entraînement sur GPU : ['NVIDIA GeForce RTX 5090']
+2026-11-25 09:11:19 [INFO] : root : TensorFlow version: 2.21.0
+2026-11-25 09:11:19 [INFO] : root : Classes originales : ['cheops', 'debris', 'double_start', 'earth_observation_sat_1', 'lisa_pathfinder', 'proba_2', 'proba_3_csc', 'proba_3_ocs', 'smart_1', 'soho', 'xmm_newton']
+2026-11-25 09:11:19 [INFO] : root : Classes du modèle : ['satellite', 'debris']
+2026-11-25 09:11:19 [INFO] : root : Train : 2105 images
+2026-11-25 09:11:19 [INFO] : root : Val   : 239 images
+2026-11-25 09:11:19 [INFO] : root : Test  : 123 images
+2026-11-25 09:11:19 [INFO] : root : Distribution binaire (Train) :
+2026-11-25 09:11:19 [INFO] : root : binary_class_name
+satellite    1919
+debris        186
+Name: count, dtype: int64
+2026-11-25 09:11:19 [INFO] : root : Distribution des classes binaires (Train) :
+2026-11-25 09:11:19 [INFO] : root : binary_class_name
+satellite    1919
+debris        186
+Name: count, dtype: int64
+2026-11-25 09:11:19 [INFO] : root : Train : 2105 images
+2026-11-25 09:11:19 [INFO] : root : binary_class_name
+satellite    1919
+debris        186
+Name: count, dtype: int64
+2026-11-25 09:11:19 [INFO] : root : Validation : 239 images
+2026-11-25 09:11:19 [INFO] : root : binary_class_name
+satellite    218
+debris        21
+Name: count, dtype: int64
+2026-11-25 09:11:19 [INFO] : root : Poids de classe :
+2026-11-25 09:11:20 [INFO] : root : Modèle rechargé depuis : src/models/Class_Detection/satellite_debris_hard_70_retrain.keras
+2026-11-25 09:11:23 [INFO] : root : Mode du learning rate : cosine_decay (initial=0.001)
+2026-11-25 09:11:39 [INFO] : root : Epoch 1 - détections validation : satellite=239, debris=0
+2026-11-25 09:11:44 [INFO] : root : Epoch 2 - détections validation : satellite=43, debris=196
+2026-11-25 09:11:49 [INFO] : root : Epoch 3 - détections validation : satellite=4, debris=235
+2026-11-25 09:11:54 [INFO] : root : Epoch 4 - détections validation : satellite=0, debris=239
+2026-11-25 09:11:59 [INFO] : root : Epoch 5 - détections validation : satellite=60, debris=179
+2026-11-25 09:12:04 [INFO] : root : Epoch 6 - détections validation : satellite=239, debris=0
+2026-11-25 09:12:09 [INFO] : root : Epoch 7 - détections validation : satellite=239, debris=0
+2026-11-25 09:12:14 [INFO] : root : Epoch 8 - détections validation : satellite=239, debris=0
+2026-11-25 09:12:18 [INFO] : root : Epoch 9 - détections validation : satellite=239, debris=0
+2026-11-25 09:12:23 [INFO] : root : Epoch 10 - détections validation : satellite=239, debris=0
+2026-11-25 09:12:28 [INFO] : root : Epoch 11 - détections validation : satellite=239, debris=0
+2026-11-25 09:12:33 [INFO] : root : Epoch 12 - détections validation : satellite=239, debris=0
+2026-11-25 09:12:37 [INFO] : root : Epoch 13 - détections validation : satellite=239, debris=0
+2026-11-25 09:12:42 [INFO] : root : Epoch 14 - détections validation : satellite=239, debris=0
+2026-11-25 09:12:47 [INFO] : root : Epoch 15 - détections validation : satellite=216, debris=23
+2026-11-25 09:12:52 [INFO] : root : Epoch 16 - détections validation : satellite=239, debris=0
+2026-11-25 09:12:57 [INFO] : root : Epoch 17 - détections validation : satellite=239, debris=0
+2026-11-25 09:13:02 [INFO] : root : Epoch 18 - détections validation : satellite=199, debris=40
+2026-11-25 09:13:07 [INFO] : root : Epoch 19 - détections validation : satellite=235, debris=4
+2026-11-25 09:13:12 [INFO] : root : Epoch 20 - détections validation : satellite=223, debris=16
+2026-11-25 09:13:17 [INFO] : root : Epoch 21 - détections validation : satellite=220, debris=19
+2026-11-25 09:13:22 [INFO] : root : Epoch 22 - détections validation : satellite=239, debris=0
+2026-11-25 09:13:27 [INFO] : root : Epoch 23 - détections validation : satellite=178, debris=61
+2026-11-25 09:13:32 [INFO] : root : Epoch 24 - détections validation : satellite=149, debris=90
+2026-11-25 09:13:36 [INFO] : root : Epoch 25 - détections validation : satellite=167, debris=72
+2026-11-25 09:13:41 [INFO] : root : Epoch 26 - détections validation : satellite=216, debris=23
+2026-11-25 09:13:46 [INFO] : root : Epoch 27 - détections validation : satellite=229, debris=10
+2026-11-25 09:13:51 [INFO] : root : Epoch 28 - détections validation : satellite=235, debris=4
+2026-11-25 09:13:56 [INFO] : root : Epoch 29 - détections validation : satellite=226, debris=13
+2026-11-25 09:14:02 [INFO] : root : Epoch 30 - détections validation : satellite=215, debris=24
+2026-11-25 09:14:06 [INFO] : root : Epoch 31 - détections validation : satellite=195, debris=44
+2026-11-25 09:14:12 [INFO] : root : Epoch 32 - détections validation : satellite=214, debris=25
+2026-11-25 09:14:17 [INFO] : root : Epoch 33 - détections validation : satellite=217, debris=22
+2026-11-25 09:14:22 [INFO] : root : Epoch 34 - détections validation : satellite=218, debris=21
+2026-11-25 09:14:27 [INFO] : root : Epoch 35 - détections validation : satellite=222, debris=17
+2026-11-25 09:14:32 [INFO] : root : Epoch 36 - détections validation : satellite=230, debris=9
+2026-11-25 09:14:37 [INFO] : root : Epoch 37 - détections validation : satellite=212, debris=27
+2026-11-25 09:14:42 [INFO] : root : Epoch 38 - détections validation : satellite=218, debris=21
+2026-11-25 09:14:47 [INFO] : root : Epoch 39 - détections validation : satellite=219, debris=20
+2026-11-25 09:14:51 [INFO] : root : Epoch 40 - détections validation : satellite=218, debris=21
+2026-11-25 09:14:56 [INFO] : root : Epoch 41 - détections validation : satellite=216, debris=23
+2026-11-25 09:15:01 [INFO] : root : Epoch 42 - détections validation : satellite=217, debris=22
+2026-11-25 09:15:06 [INFO] : root : Epoch 43 - détections validation : satellite=218, debris=21
+2026-11-25 09:15:11 [INFO] : root : Epoch 44 - détections validation : satellite=175, debris=64
+2026-11-25 09:15:16 [INFO] : root : Epoch 45 - détections validation : satellite=197, debris=42
+2026-11-25 09:15:20 [INFO] : root : Epoch 46 - détections validation : satellite=207, debris=32
+2026-11-25 09:15:25 [INFO] : root : Epoch 47 - détections validation : satellite=213, debris=26
+2026-11-25 09:15:30 [INFO] : root : Epoch 48 - détections validation : satellite=214, debris=25
+2026-11-25 09:15:35 [INFO] : root : Epoch 49 - détections validation : satellite=215, debris=24
+2026-11-25 09:15:40 [INFO] : root : Epoch 50 - détections validation : satellite=215, debris=24
+2026-11-25 09:15:45 [INFO] : root : Epoch 51 - détections validation : satellite=217, debris=22
+2026-11-25 09:15:49 [INFO] : root : Epoch 52 - détections validation : satellite=217, debris=22
+2026-11-25 09:15:54 [INFO] : root : Epoch 53 - détections validation : satellite=216, debris=23
+2026-11-25 09:15:59 [INFO] : root : Epoch 54 - détections validation : satellite=213, debris=26
+2026-11-25 09:16:04 [INFO] : root : Epoch 55 - détections validation : satellite=217, debris=22
+2026-11-25 09:16:09 [INFO] : root : Epoch 56 - détections validation : satellite=215, debris=24
+2026-11-25 09:16:14 [INFO] : root : Epoch 57 - détections validation : satellite=217, debris=22
+2026-11-25 09:16:19 [INFO] : root : Epoch 58 - détections validation : satellite=218, debris=21
+2026-11-25 09:16:24 [INFO] : root : Epoch 59 - détections validation : satellite=218, debris=21
+2026-11-25 09:16:28 [INFO] : root : Epoch 60 - détections validation : satellite=218, debris=21
+2026-11-25 09:16:33 [INFO] : root : Epoch 61 - détections validation : satellite=218, debris=21
+2026-11-25 09:16:38 [INFO] : root : Epoch 62 - détections validation : satellite=216, debris=23
+2026-11-25 09:16:43 [INFO] : root : Epoch 63 - détections validation : satellite=216, debris=23
+2026-11-25 09:16:48 [INFO] : root : Epoch 64 - détections validation : satellite=218, debris=21
+2026-11-25 09:16:53 [INFO] : root : Epoch 65 - détections validation : satellite=217, debris=22
+2026-11-25 09:16:58 [INFO] : root : Epoch 66 - détections validation : satellite=218, debris=21
+2026-11-25 09:17:03 [INFO] : root : Epoch 67 - détections validation : satellite=218, debris=21
+2026-11-25 09:17:08 [INFO] : root : Epoch 68 - détections validation : satellite=218, debris=21
+2026-11-25 09:17:13 [INFO] : root : Epoch 69 - détections validation : satellite=218, debris=21
+2026-11-25 09:17:17 [INFO] : root : Epoch 70 - détections validation : satellite=218, debris=21
+2026-11-25 09:17:18 [INFO] : root : Modèle ImageNet sauvegardé dans : src/models/Class_Detection/satellite_debris_hard_70_retrain_v3.keras
+2026-11-25 09:17:19 [INFO] : root : Seuil utilisé : 0.5
+2026-11-25 09:17:19 [INFO] : root : Résultats de classification sur le jeu de test (seuil = 0.500) :
+2026-11-25 09:17:19 [INFO] : root :               precision    recall  f1-score   support
+
+   satellite     0.9739    1.0000    0.9868       112
+      debris     1.0000    0.7273    0.8421        11
+
+    accuracy                         0.9756       123
+   macro avg     0.9870    0.8636    0.9144       123
+weighted avg     0.9762    0.9756    0.9738       123
+
+2026-11-25 09:17:19 [INFO] : root : PR-AUC debris (indépendante du seuil) : 0.8531
+2026-11-25 09:17:22 [WARNING] : tensorflow : 5 out of the last 17 calls to <function TensorFlowTrainer.make_predict_function.<locals>.one_step_on_data_distributed at 0x74472baf4fe0> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
+2026-11-25 09:17:23 [WARNING] : tensorflow : 5 out of the last 17 calls to <function TensorFlowTrainer.make_predict_function.<locals>.one_step_on_data_distributed at 0x7446b84b9c60> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
+2026-11-25 09:17:25 [INFO] : root : Modèle de classification final confirmé : src/models/Class_Detection/satellite_debris_cosin_70_retrain.keras
+2026-11-25 09:17:25 [INFO] : root : 
+              precision    recall  f1-score   support
+
+   satellite     0.9825    1.0000    0.9912       112
+      debris     1.0000    0.8182    0.9000        11
+
+    accuracy                         0.9837       123
+   macro avg     0.9912    0.9091    0.9456       123
+weighted avg     0.9840    0.9837    0.9830       123
+
+2026-11-25 09:17:25 [INFO] : root : Faux positifs classification : 0
+2026-11-25 09:17:25 [INFO] : root : Faux négatifs classification : 2
+2026-11-25 09:17:25 [INFO] : root : Analyse par confiance :
+ catégorie_confiance  nombre  erreurs  taux_erreur_%
+Très proche du seuil       2        1          50.00
+     Proche du seuil       0        0           0.00
+            Confiant     121        1           0.83
+2026-11-25 09:17:25 [INFO] : root : Erreurs ordonnées par confiance :
+        type  indice_test  probabilité_debris                                                                  image
+faux négatif           23        4.942093e-01 data/test/images/img022124_jpg.rf.5fdea77c49ac73243d47e212bf328fe5.jpg
+faux négatif           26        1.216736e-09 data/test/images/img022608_jpg.rf.4b0d142a57846256601ee67a19691fdf.jpg
+2026-11-25 09:20:32 [INFO] : root : Seuil utilisé : 0.5
+2026-11-25 09:20:32 [INFO] : root : Résultats de classification sur le jeu de test (seuil = 0.500) :
+2026-11-25 09:20:32 [INFO] : root :               precision    recall  f1-score   support
+
+   satellite     0.9739    1.0000    0.9868       112
+      debris     1.0000    0.7273    0.8421        11
+
+    accuracy                         0.9756       123
+   macro avg     0.9870    0.8636    0.9144       123
+weighted avg     0.9762    0.9756    0.9738       123
+
+2026-11-25 09:20:32 [INFO] : root : PR-AUC debris (indépendante du seuil) : 0.8531
+2026-11-25 09:20:38 [INFO] : root : Modèle de classification final confirmé : src/models/Class_Detection/satellite_debris_cosin_70_retrain.keras
+2026-11-25 09:20:38 [INFO] : root : 
+              precision    recall  f1-score   support
+
+   satellite     0.9825    1.0000    0.9912       112
+      debris     1.0000    0.8182    0.9000        11
+
+    accuracy                         0.9837       123
+   macro avg     0.9912    0.9091    0.9456       123
+weighted avg     0.9840    0.9837    0.9830       123
+
+2026-11-25 09:20:38 [INFO] : root : Faux positifs classification : 0
+2026-11-25 09:20:38 [INFO] : root : Faux négatifs classification : 2
+2026-11-25 09:20:38 [INFO] : root : Analyse par confiance :
+ catégorie_confiance  nombre  erreurs  taux_erreur_%
+Très proche du seuil       2        1          50.00
+     Proche du seuil       0        0           0.00
+            Confiant     121        1           0.83
+2026-11-25 09:20:38 [INFO] : root : Erreurs ordonnées par confiance :
+        type  indice_test  probabilité_debris                                                                  image
+faux négatif           23        4.942093e-01 data/test/images/img022124_jpg.rf.5fdea77c49ac73243d47e212bf328fe5.jpg
+faux négatif           26        1.216736e-09 data/test/images/img022608_jpg.rf.4b0d142a57846256601ee67a19691fdf.jpg
+2026-11-25 09:24:05 [INFO] : root : Entraînement sur GPU : ['NVIDIA GeForce RTX 5090']
+2026-11-25 09:24:05 [INFO] : root : TensorFlow version: 2.21.0
+2026-11-25 09:24:05 [INFO] : root : Classes originales : ['cheops', 'debris', 'double_start', 'earth_observation_sat_1', 'lisa_pathfinder', 'proba_2', 'proba_3_csc', 'proba_3_ocs', 'smart_1', 'soho', 'xmm_newton']
+2026-11-25 09:24:05 [INFO] : root : Classes du modèle : ['satellite', 'debris']
+2026-11-25 09:24:06 [INFO] : root : Train : 2105 images
+2026-11-25 09:24:06 [INFO] : root : Val   : 239 images
+2026-11-25 09:24:06 [INFO] : root : Test  : 123 images
+2026-11-25 09:24:06 [INFO] : root : Distribution binaire (Train) :
+2026-11-25 09:24:06 [INFO] : root : binary_class_name
+satellite    1919
+debris        186
+Name: count, dtype: int64
+2026-11-25 09:24:06 [INFO] : root : Distribution des classes binaires (Train) :
+2026-11-25 09:24:06 [INFO] : root : binary_class_name
+satellite    1919
+debris        186
+Name: count, dtype: int64
+2026-11-25 09:24:06 [INFO] : root : Train : 2105 images
+2026-11-25 09:24:06 [INFO] : root : binary_class_name
+satellite    1919
+debris        186
+Name: count, dtype: int64
+2026-11-25 09:24:06 [INFO] : root : Validation : 239 images
+2026-11-25 09:24:06 [INFO] : root : binary_class_name
+satellite    218
+debris        21
+Name: count, dtype: int64
+2026-11-25 09:24:06 [INFO] : root : Poids de classe :
+2026-11-25 09:25:00 [INFO] : root : Entraînement sur GPU : ['NVIDIA GeForce RTX 5090']
+2026-11-25 09:25:00 [INFO] : root : TensorFlow version: 2.21.0
+2026-11-25 09:25:00 [INFO] : root : Classes originales : ['cheops', 'debris', 'double_start', 'earth_observation_sat_1', 'lisa_pathfinder', 'proba_2', 'proba_3_csc', 'proba_3_ocs', 'smart_1', 'soho', 'xmm_newton']
+2026-11-25 09:25:00 [INFO] : root : Classes du modèle : ['satellite', 'debris']
+2026-11-25 09:25:00 [INFO] : root : Train : 2105 images
+2026-11-25 09:25:00 [INFO] : root : Val   : 239 images
+2026-11-25 09:25:00 [INFO] : root : Test  : 123 images
+2026-11-25 09:25:00 [INFO] : root : Distribution binaire (Train) :
+2026-11-25 09:25:00 [INFO] : root : binary_class_name
+satellite    1919
+debris        186
+Name: count, dtype: int64
+2026-11-25 09:25:00 [INFO] : root : Distribution des classes binaires (Train) :
+2026-11-25 09:25:00 [INFO] : root : binary_class_name
+satellite    1919
+debris        186
+Name: count, dtype: int64
+2026-11-25 09:25:00 [INFO] : root : Train : 2105 images
+2026-11-25 09:25:00 [INFO] : root : binary_class_name
+satellite    1919
+debris        186
+Name: count, dtype: int64
+2026-11-25 09:25:00 [INFO] : root : Validation : 239 images
+2026-11-25 09:25:00 [INFO] : root : binary_class_name
+satellite    218
+debris        21
+Name: count, dtype: int64
+2026-11-25 09:25:00 [INFO] : root : Poids de classe :
+2026-11-25 09:25:58 [INFO] : root : Répertoire projet utilisé : /home/jzory/Documents/leo
+2026-11-25 09:25:58 [INFO] : root : Entraînement sur GPU : ['NVIDIA GeForce RTX 5090']
+2026-11-25 09:25:58 [INFO] : root : TensorFlow version: 2.21.0
+2026-11-25 09:25:58 [INFO] : root : Classes originales : ['cheops', 'debris', 'double_start', 'earth_observation_sat_1', 'lisa_pathfinder', 'proba_2', 'proba_3_csc', 'proba_3_ocs', 'smart_1', 'soho', 'xmm_newton']
+2026-11-25 09:25:58 [INFO] : root : Classes du modèle : ['satellite', 'debris']
+2026-11-25 09:25:58 [INFO] : root : Train : 2105 images
+2026-11-25 09:25:58 [INFO] : root : Val   : 239 images
+2026-11-25 09:25:58 [INFO] : root : Test  : 123 images
+2026-11-25 09:25:58 [INFO] : root : Distribution binaire (Train) :
+2026-11-25 09:25:58 [INFO] : root : binary_class_name
+satellite    1919
+debris        186
+Name: count, dtype: int64
+2026-11-25 09:25:58 [INFO] : root : Distribution des classes binaires (Train) :
+2026-11-25 09:25:58 [INFO] : root : binary_class_name
+satellite    1919
+debris        186
+Name: count, dtype: int64
+2026-11-25 09:25:58 [INFO] : root : Train : 2105 images
+2026-11-25 09:25:58 [INFO] : root : binary_class_name
+satellite    1919
+debris        186
+Name: count, dtype: int64
+2026-11-25 09:25:58 [INFO] : root : Validation : 239 images
+2026-11-25 09:25:58 [INFO] : root : binary_class_name
+satellite    218
+debris        21
+Name: count, dtype: int64
+2026-11-25 09:25:58 [INFO] : root : Poids de classe :
+2026-11-25 09:26:06 [INFO] : root : Répertoire projet utilisé : /home/jzory/Documents/leo
+2026-11-25 09:26:06 [INFO] : root : Entraînement sur GPU : ['NVIDIA GeForce RTX 5090']
+2026-11-25 09:26:06 [INFO] : root : TensorFlow version: 2.21.0
+2026-11-25 09:26:06 [INFO] : root : Classes originales : ['cheops', 'debris', 'double_start', 'earth_observation_sat_1', 'lisa_pathfinder', 'proba_2', 'proba_3_csc', 'proba_3_ocs', 'smart_1', 'soho', 'xmm_newton']
+2026-11-25 09:26:06 [INFO] : root : Classes du modèle : ['satellite', 'debris']
+2026-11-25 09:26:06 [INFO] : root : Train : 2105 images
+2026-11-25 09:26:06 [INFO] : root : Val   : 239 images
+2026-11-25 09:26:06 [INFO] : root : Test  : 123 images
+2026-11-25 09:26:06 [INFO] : root : Distribution binaire (Train) :
+2026-11-25 09:26:06 [INFO] : root : binary_class_name
+satellite    1919
+debris        186
+Name: count, dtype: int64
+2026-11-25 09:26:06 [INFO] : root : Distribution des classes binaires (Train) :
+2026-11-25 09:26:06 [INFO] : root : binary_class_name
+satellite    1919
+debris        186
+Name: count, dtype: int64
+2026-11-25 09:26:06 [INFO] : root : Train : 2105 images
+2026-11-25 09:26:06 [INFO] : root : binary_class_name
+satellite    1919
+debris        186
+Name: count, dtype: int64
+2026-11-25 09:26:06 [INFO] : root : Validation : 239 images
+2026-11-25 09:26:06 [INFO] : root : binary_class_name
+satellite    218
+debris        21
+Name: count, dtype: int64
+2026-11-25 09:26:06 [INFO] : root : Poids de classe :
+2026-11-25 09:26:07 [INFO] : root : Modèle rechargé depuis : src/models/Class_Detection/satellite_debris_hard_70_retrain_v3.keras
+2026-11-25 09:26:09 [INFO] : root : Mode du learning rate : cosine_decay (initial=0.001)
+2026-11-25 09:27:37 [INFO] : root : Entraînement sur GPU : ['NVIDIA GeForce RTX 5090']
+2026-11-25 09:27:37 [INFO] : root : TensorFlow version: 2.21.0
+2026-11-25 09:27:37 [INFO] : root : Classes originales : ['cheops', 'debris', 'double_start', 'earth_observation_sat_1', 'lisa_pathfinder', 'proba_2', 'proba_3_csc', 'proba_3_ocs', 'smart_1', 'soho', 'xmm_newton']
+2026-11-25 09:27:37 [INFO] : root : Classes du modèle : ['satellite', 'debris']
+2026-11-25 09:27:37 [INFO] : root : Train : 2105 images
+2026-11-25 09:27:37 [INFO] : root : Val   : 239 images
+2026-11-25 09:27:37 [INFO] : root : Test  : 123 images
+2026-11-25 09:27:37 [INFO] : root : Distribution binaire (Train) :
+2026-11-25 09:27:37 [INFO] : root : binary_class_name
+satellite    1919
+debris        186
+Name: count, dtype: int64
+2026-11-25 09:27:37 [INFO] : root : Distribution des classes binaires (Train) :
+2026-11-25 09:27:37 [INFO] : root : binary_class_name
+satellite    1919
+debris        186
+Name: count, dtype: int64
+2026-11-25 09:27:37 [INFO] : root : Train : 2105 images
+2026-11-25 09:27:37 [INFO] : root : binary_class_name
+satellite    1919
+debris        186
+Name: count, dtype: int64
+2026-11-25 09:27:37 [INFO] : root : Validation : 239 images
+2026-11-25 09:27:37 [INFO] : root : binary_class_name
+satellite    218
+debris        21
+Name: count, dtype: int64
+2026-11-25 09:27:37 [INFO] : root : Poids de classe :
+2026-11-25 09:27:38 [INFO] : root : Modèle rechargé depuis : src/models/Class_Detection/satellite_debris_hard_70_retrain_v3.keras
+2026-11-25 09:27:41 [INFO] : root : Mode du learning rate : cosine_decay (initial=0.001)
+2026-11-25 09:27:57 [INFO] : root : Epoch 1 - détections validation : satellite=239, debris=0
+2026-11-25 09:28:02 [INFO] : root : Epoch 2 - détections validation : satellite=239, debris=0
+2026-11-25 09:28:07 [INFO] : root : Epoch 3 - détections validation : satellite=239, debris=0
+2026-11-25 09:28:12 [INFO] : root : Epoch 4 - détections validation : satellite=239, debris=0
+2026-11-25 09:28:17 [INFO] : root : Epoch 5 - détections validation : satellite=239, debris=0
+2026-11-25 09:28:22 [INFO] : root : Epoch 6 - détections validation : satellite=239, debris=0
+2026-11-25 09:28:27 [INFO] : root : Epoch 7 - détections validation : satellite=239, debris=0
+2026-11-25 09:28:32 [INFO] : root : Epoch 8 - détections validation : satellite=239, debris=0
+2026-11-25 09:28:37 [INFO] : root : Epoch 9 - détections validation : satellite=239, debris=0
+2026-11-25 09:28:42 [INFO] : root : Epoch 10 - détections validation : satellite=238, debris=1
+2026-11-25 09:28:47 [INFO] : root : Epoch 11 - détections validation : satellite=202, debris=37
+2026-11-25 09:28:52 [INFO] : root : Epoch 12 - détections validation : satellite=239, debris=0
+2026-11-25 09:28:57 [INFO] : root : Epoch 13 - détections validation : satellite=238, debris=1
+2026-11-25 09:29:02 [INFO] : root : Epoch 14 - détections validation : satellite=205, debris=34
+2026-11-25 09:29:07 [INFO] : root : Epoch 15 - détections validation : satellite=238, debris=1
+2026-11-25 09:29:12 [INFO] : root : Epoch 16 - détections validation : satellite=236, debris=3
+2026-11-25 09:29:17 [INFO] : root : Epoch 17 - détections validation : satellite=230, debris=9
+2026-11-25 09:29:22 [INFO] : root : Epoch 18 - détections validation : satellite=239, debris=0
+2026-11-25 09:29:27 [INFO] : root : Epoch 19 - détections validation : satellite=230, debris=9
+2026-11-25 09:29:32 [INFO] : root : Epoch 20 - détections validation : satellite=220, debris=19
+2026-11-25 09:29:37 [INFO] : root : Epoch 21 - détections validation : satellite=239, debris=0
+2026-11-25 09:29:42 [INFO] : root : Epoch 22 - détections validation : satellite=236, debris=3
+2026-11-25 09:29:47 [INFO] : root : Epoch 23 - détections validation : satellite=92, debris=147
+2026-11-25 09:29:51 [INFO] : root : Epoch 24 - détections validation : satellite=80, debris=159
+2026-11-25 09:29:56 [INFO] : root : Epoch 25 - détections validation : satellite=51, debris=188
+2026-11-25 09:30:01 [INFO] : root : Epoch 26 - détections validation : satellite=147, debris=92
+2026-11-25 09:30:06 [INFO] : root : Epoch 27 - détections validation : satellite=174, debris=65
+2026-11-25 09:30:11 [INFO] : root : Epoch 28 - détections validation : satellite=163, debris=76
+2026-11-25 09:30:16 [INFO] : root : Epoch 29 - détections validation : satellite=188, debris=51
+2026-11-25 09:30:21 [INFO] : root : Epoch 30 - détections validation : satellite=111, debris=128
+2026-11-25 09:30:26 [INFO] : root : Epoch 31 - détections validation : satellite=107, debris=132
+2026-11-25 09:30:31 [INFO] : root : Epoch 32 - détections validation : satellite=191, debris=48
+2026-11-25 09:30:35 [INFO] : root : Epoch 33 - détections validation : satellite=196, debris=43
+2026-11-25 09:30:40 [INFO] : root : Epoch 34 - détections validation : satellite=205, debris=34
+2026-11-25 09:30:45 [INFO] : root : Epoch 35 - détections validation : satellite=201, debris=38
+2026-11-25 09:30:51 [INFO] : root : Epoch 36 - détections validation : satellite=217, debris=22
+2026-11-25 09:30:55 [INFO] : root : Epoch 37 - détections validation : satellite=220, debris=19
+2026-11-25 09:31:01 [INFO] : root : Epoch 38 - détections validation : satellite=220, debris=19
+2026-11-25 09:31:06 [INFO] : root : Epoch 39 - détections validation : satellite=219, debris=20
+2026-11-25 09:31:11 [INFO] : root : Epoch 40 - détections validation : satellite=215, debris=24
+2026-11-25 09:31:16 [INFO] : root : Epoch 41 - détections validation : satellite=216, debris=23
+2026-11-25 09:31:21 [INFO] : root : Epoch 42 - détections validation : satellite=218, debris=21
+2026-11-25 09:31:26 [INFO] : root : Epoch 43 - détections validation : satellite=217, debris=22
+2026-11-25 09:31:31 [INFO] : root : Epoch 44 - détections validation : satellite=218, debris=21
+2026-11-25 09:31:37 [INFO] : root : Epoch 45 - détections validation : satellite=219, debris=20
+2026-11-25 09:31:42 [INFO] : root : Epoch 46 - détections validation : satellite=215, debris=24
+2026-11-25 09:31:47 [INFO] : root : Epoch 47 - détections validation : satellite=218, debris=21
+2026-11-25 09:31:52 [INFO] : root : Epoch 48 - détections validation : satellite=216, debris=23
+2026-11-25 09:31:57 [INFO] : root : Epoch 49 - détections validation : satellite=219, debris=20
+2026-11-25 09:32:02 [INFO] : root : Epoch 50 - détections validation : satellite=217, debris=22
+2026-11-25 09:32:07 [INFO] : root : Epoch 51 - détections validation : satellite=220, debris=19
+2026-11-25 09:32:12 [INFO] : root : Epoch 52 - détections validation : satellite=218, debris=21
+2026-11-25 09:32:17 [INFO] : root : Epoch 53 - détections validation : satellite=219, debris=20
+2026-11-25 09:32:22 [INFO] : root : Epoch 54 - détections validation : satellite=219, debris=20
+2026-11-25 09:32:27 [INFO] : root : Epoch 55 - détections validation : satellite=218, debris=21
+2026-11-25 09:32:32 [INFO] : root : Epoch 56 - détections validation : satellite=218, debris=21
+2026-11-25 09:32:37 [INFO] : root : Epoch 57 - détections validation : satellite=218, debris=21
+2026-11-25 09:32:42 [INFO] : root : Epoch 58 - détections validation : satellite=219, debris=20
+2026-11-25 09:32:47 [INFO] : root : Epoch 59 - détections validation : satellite=219, debris=20
+2026-11-25 09:32:51 [INFO] : root : Epoch 60 - détections validation : satellite=219, debris=20
+2026-11-25 09:32:57 [INFO] : root : Epoch 61 - détections validation : satellite=219, debris=20
+2026-11-25 09:33:02 [INFO] : root : Epoch 62 - détections validation : satellite=219, debris=20
+2026-11-25 09:33:07 [INFO] : root : Epoch 63 - détections validation : satellite=219, debris=20
+2026-11-25 09:33:11 [INFO] : root : Epoch 64 - détections validation : satellite=219, debris=20
+2026-11-25 09:33:16 [INFO] : root : Epoch 65 - détections validation : satellite=219, debris=20
+2026-11-25 09:33:21 [INFO] : root : Epoch 66 - détections validation : satellite=219, debris=20
+2026-11-25 09:33:26 [INFO] : root : Epoch 67 - détections validation : satellite=219, debris=20
+2026-11-25 09:33:31 [INFO] : root : Epoch 68 - détections validation : satellite=219, debris=20
+2026-11-25 09:33:36 [INFO] : root : Epoch 69 - détections validation : satellite=219, debris=20
+2026-11-25 09:33:41 [INFO] : root : Epoch 70 - détections validation : satellite=219, debris=20
+2026-11-25 09:33:41 [INFO] : root : Modèle ImageNet sauvegardé dans : src/models/Class_Detection/satellite_debris_hard_70_retrain_v4.keras
+2026-11-25 09:33:42 [INFO] : root : Seuil utilisé : 0.5
+2026-11-25 09:33:42 [INFO] : root : Résultats de classification sur le jeu de test (seuil = 0.500) :
+2026-11-25 09:33:42 [INFO] : root :               precision    recall  f1-score   support
+
+   satellite     0.9912    1.0000    0.9956       112
+      debris     1.0000    0.9091    0.9524        11
+
+    accuracy                         0.9919       123
+   macro avg     0.9956    0.9545    0.9740       123
+weighted avg     0.9919    0.9919    0.9917       123
+
+2026-11-25 09:33:42 [INFO] : root : PR-AUC debris (indépendante du seuil) : 0.9188
+2026-11-25 09:33:45 [WARNING] : tensorflow : 5 out of the last 17 calls to <function TensorFlowTrainer.make_predict_function.<locals>.one_step_on_data_distributed at 0x7e4980900ae0> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
+2026-11-25 09:33:47 [WARNING] : tensorflow : 5 out of the last 17 calls to <function TensorFlowTrainer.make_predict_function.<locals>.one_step_on_data_distributed at 0x7e48b46fb1a0> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
+2026-11-25 09:33:49 [INFO] : root : Modèle de classification final confirmé : src/models/Class_Detection/satellite_debris_cosin_70_retrain.keras
+2026-11-25 09:33:49 [INFO] : root : 
+              precision    recall  f1-score   support
+
+   satellite     0.9825    1.0000    0.9912       112
+      debris     1.0000    0.8182    0.9000        11
+
+    accuracy                         0.9837       123
+   macro avg     0.9912    0.9091    0.9456       123
+weighted avg     0.9840    0.9837    0.9830       123
+
+2026-11-25 09:33:49 [INFO] : root : Faux positifs classification : 0
+2026-11-25 09:33:49 [INFO] : root : Faux négatifs classification : 2
+2026-11-25 09:33:49 [INFO] : root : Analyse par confiance :
+ catégorie_confiance  nombre  erreurs  taux_erreur_%
+Très proche du seuil       2        1          50.00
+     Proche du seuil       0        0           0.00
+            Confiant     121        1           0.83
+2026-11-25 09:33:49 [INFO] : root : Erreurs ordonnées par confiance :
+        type  indice_test  probabilité_debris                                                                  image
+faux négatif           23        4.942093e-01 data/test/images/img022124_jpg.rf.5fdea77c49ac73243d47e212bf328fe5.jpg
+faux négatif           26        1.216736e-09 data/test/images/img022608_jpg.rf.4b0d142a57846256601ee67a19691fdf.jpg
+2026-11-25 09:37:13 [INFO] : root : Seuil utilisé : 0.5
+2026-11-25 09:42:55 [INFO] : root : Faux positifs classification : 0
+2026-11-25 09:42:55 [INFO] : root : Faux négatifs classification : 1
+2026-11-25 09:42:55 [INFO] : root : Analyse par confiance :
+ catégorie_confiance  nombre  erreurs  taux_erreur_%
+Très proche du seuil       1        0           0.00
+     Proche du seuil       0        0           0.00
+            Confiant     122        1           0.82
+2026-11-25 09:42:55 [INFO] : root : Erreurs ordonnées par confiance :
+        type  indice_test  probabilité_debris                                                                  image
+faux négatif           26        8.996286e-11 data/test/images/img022608_jpg.rf.4b0d142a57846256601ee67a19691fdf.jpg
+2026-11-25 09:47:53 [INFO] : root : Entraînement sur GPU : ['NVIDIA GeForce RTX 5090']
+2026-11-25 09:47:53 [INFO] : root : TensorFlow version: 2.21.0
+2026-11-25 09:47:53 [INFO] : root : Classes originales : ['cheops', 'debris', 'double_start', 'earth_observation_sat_1', 'lisa_pathfinder', 'proba_2', 'proba_3_csc', 'proba_3_ocs', 'smart_1', 'soho', 'xmm_newton']
+2026-11-25 09:47:53 [INFO] : root : Classes du modèle : ['satellite', 'debris']
+2026-11-25 09:47:53 [INFO] : root : Train : 2105 images
+2026-11-25 09:47:53 [INFO] : root : Val   : 239 images
+2026-11-25 09:47:53 [INFO] : root : Test  : 123 images
+2026-11-25 09:47:53 [INFO] : root : Distribution binaire (Train) :
+2026-11-25 09:47:53 [INFO] : root : binary_class_name
+satellite    1919
+debris        186
+Name: count, dtype: int64
+2026-11-25 09:47:53 [INFO] : root : Distribution des classes binaires (Train) :
+2026-11-25 09:47:53 [INFO] : root : binary_class_name
+satellite    1919
+debris        186
+Name: count, dtype: int64
+2026-11-25 09:47:53 [INFO] : root : Train : 2105 images
+2026-11-25 09:47:53 [INFO] : root : binary_class_name
+satellite    1919
+debris        186
+Name: count, dtype: int64
+2026-11-25 09:47:53 [INFO] : root : Validation : 239 images
+2026-11-25 09:47:53 [INFO] : root : binary_class_name
+satellite    218
+debris        21
+Name: count, dtype: int64
+2026-11-25 09:47:53 [INFO] : root : Poids de classe :
+2026-11-25 09:47:54 [INFO] : root : Modèle rechargé depuis : src/models/Class_Detection/satellite_debris_hard_70_retrain_v3.keras
+2026-11-25 09:47:56 [INFO] : root : Mode du learning rate : cosine_decay (initial=0.001)
+2026-11-25 09:48:12 [INFO] : root : Epoch 1 - détections validation : satellite=239, debris=0
+2026-11-25 09:48:17 [INFO] : root : Epoch 2 - détections validation : satellite=229, debris=10
+2026-11-25 09:48:22 [INFO] : root : Epoch 3 - détections validation : satellite=97, debris=142
+2026-11-25 09:48:27 [INFO] : root : Epoch 4 - détections validation : satellite=239, debris=0
+2026-11-25 09:48:32 [INFO] : root : Epoch 5 - détections validation : satellite=239, debris=0
+2026-11-25 09:48:37 [INFO] : root : Epoch 6 - détections validation : satellite=231, debris=8
+2026-11-25 09:48:42 [INFO] : root : Epoch 7 - détections validation : satellite=220, debris=19
+2026-11-25 09:48:47 [INFO] : root : Epoch 8 - détections validation : satellite=0, debris=239
+2026-11-25 09:48:51 [INFO] : root : Epoch 9 - détections validation : satellite=3, debris=236
+2026-11-25 09:48:56 [INFO] : root : Epoch 10 - détections validation : satellite=1, debris=238
+2026-11-25 09:49:01 [INFO] : root : Epoch 11 - détections validation : satellite=0, debris=239
+2026-11-25 09:49:06 [INFO] : root : Epoch 12 - détections validation : satellite=0, debris=239
+2026-11-25 09:49:11 [INFO] : root : Epoch 13 - détections validation : satellite=3, debris=236
+2026-11-25 09:49:16 [INFO] : root : Epoch 14 - détections validation : satellite=1, debris=238
+2026-11-25 09:49:21 [INFO] : root : Epoch 15 - détections validation : satellite=3, debris=236
+2026-11-25 09:49:26 [INFO] : root : Epoch 16 - détections validation : satellite=1, debris=238
+2026-11-25 09:49:30 [INFO] : root : Epoch 17 - détections validation : satellite=35, debris=204
+2026-11-25 09:49:36 [INFO] : root : Epoch 18 - détections validation : satellite=162, debris=77
+2026-11-25 09:49:41 [INFO] : root : Epoch 19 - détections validation : satellite=113, debris=126
+2026-11-25 09:49:46 [INFO] : root : Epoch 20 - détections validation : satellite=168, debris=71
+2026-11-25 09:49:51 [INFO] : root : Epoch 21 - détections validation : satellite=129, debris=110
+2026-11-25 09:49:56 [INFO] : root : Epoch 22 - détections validation : satellite=2, debris=237
+2026-11-25 09:50:00 [INFO] : root : Epoch 23 - détections validation : satellite=3, debris=236
+2026-11-25 09:50:05 [INFO] : root : Epoch 24 - détections validation : satellite=28, debris=211
+2026-11-25 09:50:10 [INFO] : root : Epoch 25 - détections validation : satellite=59, debris=180
+2026-11-25 09:50:15 [INFO] : root : Epoch 26 - détections validation : satellite=114, debris=125
+2026-11-25 09:50:20 [INFO] : root : Epoch 27 - détections validation : satellite=212, debris=27
+2026-11-25 09:50:25 [INFO] : root : Epoch 28 - détections validation : satellite=95, debris=144
+2026-11-25 09:50:30 [INFO] : root : Epoch 29 - détections validation : satellite=112, debris=127
+2026-11-25 09:50:34 [INFO] : root : Epoch 30 - détections validation : satellite=116, debris=123
+2026-11-25 09:50:40 [INFO] : root : Epoch 31 - détections validation : satellite=176, debris=63
+2026-11-25 09:50:45 [INFO] : root : Epoch 32 - détections validation : satellite=128, debris=111
+2026-11-25 09:50:50 [INFO] : root : Epoch 33 - détections validation : satellite=170, debris=69
+2026-11-25 09:50:55 [INFO] : root : Epoch 34 - détections validation : satellite=170, debris=69
+2026-11-25 09:51:00 [INFO] : root : Epoch 35 - détections validation : satellite=177, debris=62
+2026-11-25 09:51:05 [INFO] : root : Epoch 36 - détections validation : satellite=208, debris=31
+2026-11-25 09:51:10 [INFO] : root : Epoch 37 - détections validation : satellite=213, debris=26
+2026-11-25 09:51:16 [INFO] : root : Epoch 38 - détections validation : satellite=218, debris=21
+2026-11-25 09:51:20 [INFO] : root : Epoch 39 - détections validation : satellite=217, debris=22
+2026-11-25 09:51:25 [INFO] : root : Epoch 40 - détections validation : satellite=211, debris=28
+2026-11-25 09:51:30 [INFO] : root : Epoch 41 - détections validation : satellite=219, debris=20
+2026-11-25 09:51:35 [INFO] : root : Epoch 42 - détections validation : satellite=219, debris=20
+2026-11-25 09:51:40 [INFO] : root : Epoch 43 - détections validation : satellite=229, debris=10
+2026-11-25 09:51:45 [INFO] : root : Epoch 44 - détections validation : satellite=229, debris=10
+2026-11-25 09:51:50 [INFO] : root : Epoch 45 - détections validation : satellite=220, debris=19
+2026-11-25 09:51:55 [INFO] : root : Epoch 46 - détections validation : satellite=236, debris=3
+2026-11-25 09:52:00 [INFO] : root : Epoch 47 - détections validation : satellite=220, debris=19
+2026-11-25 09:52:05 [INFO] : root : Epoch 48 - détections validation : satellite=219, debris=20
+2026-11-25 09:52:10 [INFO] : root : Epoch 49 - détections validation : satellite=219, debris=20
+2026-11-25 09:52:15 [INFO] : root : Epoch 50 - détections validation : satellite=217, debris=22
+2026-11-25 09:52:20 [INFO] : root : Epoch 51 - détections validation : satellite=217, debris=22
+2026-11-25 09:52:25 [INFO] : root : Epoch 52 - détections validation : satellite=216, debris=23
+2026-11-25 09:52:30 [INFO] : root : Epoch 53 - détections validation : satellite=218, debris=21
+2026-11-25 09:52:36 [INFO] : root : Epoch 54 - détections validation : satellite=219, debris=20
+2026-11-25 09:52:41 [INFO] : root : Epoch 55 - détections validation : satellite=219, debris=20
+2026-11-25 09:52:47 [INFO] : root : Epoch 56 - détections validation : satellite=219, debris=20
+2026-11-25 09:52:52 [INFO] : root : Epoch 57 - détections validation : satellite=219, debris=20
+2026-11-25 09:52:58 [INFO] : root : Epoch 58 - détections validation : satellite=219, debris=20
+2026-11-25 09:53:04 [INFO] : root : Epoch 59 - détections validation : satellite=219, debris=20
+2026-11-25 09:53:09 [INFO] : root : Epoch 60 - détections validation : satellite=219, debris=20
+2026-11-25 09:53:15 [INFO] : root : Epoch 61 - détections validation : satellite=219, debris=20
+2026-11-25 09:53:20 [INFO] : root : Epoch 62 - détections validation : satellite=219, debris=20
+2026-11-25 09:53:25 [INFO] : root : Epoch 63 - détections validation : satellite=219, debris=20
+2026-11-25 09:53:30 [INFO] : root : Epoch 64 - détections validation : satellite=219, debris=20
+2026-11-25 09:53:36 [INFO] : root : Epoch 65 - détections validation : satellite=219, debris=20
+2026-11-25 09:53:41 [INFO] : root : Epoch 66 - détections validation : satellite=218, debris=21
+2026-11-25 09:53:46 [INFO] : root : Epoch 67 - détections validation : satellite=218, debris=21
+2026-11-25 09:53:52 [INFO] : root : Epoch 68 - détections validation : satellite=218, debris=21
+2026-11-25 09:53:57 [INFO] : root : Epoch 69 - détections validation : satellite=218, debris=21
+2026-11-25 09:54:03 [INFO] : root : Epoch 70 - détections validation : satellite=218, debris=21
+2026-11-25 09:54:03 [INFO] : root : Modèle ImageNet sauvegardé dans : src/models/Class_Detection/satellite_debris_hard_70_retrain_v4.keras
+2026-11-25 09:54:04 [INFO] : root : Seuil utilisé : 0.5
+2026-11-25 09:54:04 [INFO] : root : Résultats de classification sur le jeu de test (seuil = 0.500) :
+2026-11-25 09:54:04 [INFO] : root :               precision    recall  f1-score   support
+
+   satellite     0.9825    1.0000    0.9912       112
+      debris     1.0000    0.8182    0.9000        11
+
+    accuracy                         0.9837       123
+   macro avg     0.9912    0.9091    0.9456       123
+weighted avg     0.9840    0.9837    0.9830       123
+
+2026-11-25 09:54:04 [INFO] : root : PR-AUC debris (indépendante du seuil) : 0.8360
+2026-11-25 09:54:09 [WARNING] : tensorflow : 5 out of the last 17 calls to <function TensorFlowTrainer.make_predict_function.<locals>.one_step_on_data_distributed at 0x79c355f14040> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
+2026-11-25 09:54:12 [WARNING] : tensorflow : 5 out of the last 17 calls to <function TensorFlowTrainer.make_predict_function.<locals>.one_step_on_data_distributed at 0x79c2ec4e7740> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
+2026-11-25 09:54:15 [INFO] : root : Modèle de classification final confirmé : src/models/Class_Detection/satellite_debris_cosin_70_retrain.keras
+2026-11-25 09:54:15 [INFO] : root : 
+              precision    recall  f1-score   support
+
+   satellite     0.9825    1.0000    0.9912       112
+      debris     1.0000    0.8182    0.9000        11
+
+    accuracy                         0.9837       123
+   macro avg     0.9912    0.9091    0.9456       123
+weighted avg     0.9840    0.9837    0.9830       123
+
+2026-11-25 09:54:15 [INFO] : root : Faux positifs classification : 0
+2026-11-25 09:54:15 [INFO] : root : Faux négatifs classification : 2
+2026-11-25 09:54:15 [INFO] : root : Analyse par confiance :
+ catégorie_confiance  nombre  erreurs  taux_erreur_%
+Très proche du seuil       2        1          50.00
+     Proche du seuil       0        0           0.00
+            Confiant     121        1           0.83
+2026-11-25 09:54:15 [INFO] : root : Erreurs ordonnées par confiance :
+        type  indice_test  probabilité_debris                                                                  image
+faux négatif           23        4.942093e-01 data/test/images/img022124_jpg.rf.5fdea77c49ac73243d47e212bf328fe5.jpg
+faux négatif           26        1.216736e-09 data/test/images/img022608_jpg.rf.4b0d142a57846256601ee67a19691fdf.jpg

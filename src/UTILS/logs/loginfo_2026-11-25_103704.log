@@ -1,0 +1,121 @@
+# TESTPILOT_RUN_PPID=382179
+2026-11-25 10:37:04 [INFO] : root : Entraînement sur GPU : ['/physical_device:GPU:0']
+2026-11-25 10:37:04 [INFO] : root : TensorFlow : 2.21.0
+2026-11-25 10:37:04 [INFO] : root : Classes originales : ['cheops', 'debris', 'double_start', 'earth_observation_sat_1', 'lisa_pathfinder', 'proba_2', 'proba_3_csc', 'proba_3_ocs', 'smart_1', 'soho', 'xmm_newton']
+2026-11-25 10:37:04 [INFO] : root : Classes du modèle : ['satellite', 'debris']
+2026-11-25 10:37:04 [INFO] : root : Train : 2105 images
+2026-11-25 10:37:04 [INFO] : root : Val   : 239 images
+2026-11-25 10:37:04 [INFO] : root : Test  : 123 images
+2026-11-25 10:37:04 [INFO] : root : Répartition train :
+binary_class_name
+satellite    1919
+debris        186
+Name: count, dtype: int64
+2026-11-25 10:37:32 [INFO] : root : Répertoire projet utilisé : /home/jzory/Documents/leo
+2026-11-25 10:37:32 [INFO] : root : Entraînement sur GPU : ['/physical_device:GPU:0']
+2026-11-25 10:37:32 [INFO] : root : TensorFlow : 2.21.0
+2026-11-25 10:37:32 [INFO] : root : Classes originales : ['cheops', 'debris', 'double_start', 'earth_observation_sat_1', 'lisa_pathfinder', 'proba_2', 'proba_3_csc', 'proba_3_ocs', 'smart_1', 'soho', 'xmm_newton']
+2026-11-25 10:37:32 [INFO] : root : Classes du modèle : ['satellite', 'debris']
+2026-11-25 10:37:32 [INFO] : root : Train : 2105 images
+2026-11-25 10:37:32 [INFO] : root : Val   : 239 images
+2026-11-25 10:37:32 [INFO] : root : Test  : 123 images
+2026-11-25 10:37:32 [INFO] : root : Répartition train :
+binary_class_name
+satellite    1919
+debris        186
+Name: count, dtype: int64
+2026-11-25 10:37:34 [INFO] : root : Mode du learning rate : cosine_decay (initial=0.001000, epochs=60)
+2026-11-25 10:38:59 [INFO] : root : Epoch 1 - Réel : satellite | Prévu : satellite (p_debris=0.48) | IoU=0.00 -> boîte mauvaise
+2026-11-25 10:39:02 [INFO] : root : Epoch 2 - Réel : satellite | Prévu : debris (p_debris=0.64) | IoU=0.34 -> boîte mauvaise
+2026-11-25 10:39:05 [INFO] : root : Epoch 3 - Réel : satellite | Prévu : satellite (p_debris=0.08) | IoU=0.07 -> boîte mauvaise
+2026-11-25 10:39:07 [INFO] : root : Epoch 4 - Réel : satellite | Prévu : satellite (p_debris=0.00) | IoU=0.00 -> boîte mauvaise
+2026-11-25 10:39:10 [INFO] : root : Epoch 5 - Réel : satellite | Prévu : debris (p_debris=0.95) | IoU=0.00 -> boîte mauvaise
+2026-11-25 10:39:12 [INFO] : root : Epoch 6 - Réel : satellite | Prévu : debris (p_debris=1.00) | IoU=0.00 -> boîte mauvaise
+2026-11-25 10:39:15 [INFO] : root : Epoch 7 - Réel : satellite | Prévu : satellite (p_debris=0.00) | IoU=0.06 -> boîte mauvaise
+2026-11-25 10:39:17 [INFO] : root : Epoch 8 - Réel : satellite | Prévu : satellite (p_debris=0.00) | IoU=0.00 -> boîte mauvaise
+2026-11-25 10:39:20 [INFO] : root : Epoch 9 - Réel : satellite | Prévu : satellite (p_debris=0.00) | IoU=0.13 -> boîte mauvaise
+2026-11-25 10:39:23 [INFO] : root : Epoch 10 - Réel : satellite | Prévu : satellite (p_debris=0.00) | IoU=0.24 -> boîte mauvaise
+2026-11-25 10:39:25 [INFO] : root : Epoch 11 - Réel : satellite | Prévu : satellite (p_debris=0.00) | IoU=0.22 -> boîte mauvaise
+2026-11-25 10:39:28 [INFO] : root : Epoch 12 - Réel : satellite | Prévu : satellite (p_debris=0.00) | IoU=0.34 -> boîte mauvaise
+2026-11-25 10:39:31 [INFO] : root : Epoch 13 - Réel : satellite | Prévu : satellite (p_debris=0.00) | IoU=0.29 -> boîte mauvaise
+2026-11-25 10:39:34 [INFO] : root : Epoch 14 - Réel : satellite | Prévu : satellite (p_debris=0.00) | IoU=0.43 -> boîte mauvaise
+2026-11-25 10:39:36 [INFO] : root : Epoch 15 - Réel : satellite | Prévu : satellite (p_debris=0.00) | IoU=0.33 -> boîte mauvaise
+2026-11-25 10:39:39 [INFO] : root : Epoch 16 - Réel : satellite | Prévu : satellite (p_debris=0.00) | IoU=0.69 -> boîte bonne
+2026-11-25 10:39:42 [INFO] : root : Epoch 17 - Réel : satellite | Prévu : satellite (p_debris=0.00) | IoU=0.66 -> boîte bonne
+2026-11-25 10:39:45 [INFO] : root : Epoch 18 - Réel : satellite | Prévu : satellite (p_debris=0.00) | IoU=0.53 -> boîte bonne
+2026-11-25 10:39:47 [INFO] : root : Epoch 19 - Réel : satellite | Prévu : satellite (p_debris=0.00) | IoU=0.82 -> boîte bonne
+2026-11-25 10:39:50 [INFO] : root : Epoch 20 - Réel : debris | Prévu : debris (p_debris=1.00) | IoU=0.09 -> boîte mauvaise
+2026-11-25 10:39:53 [INFO] : root : Epoch 21 - Réel : satellite | Prévu : satellite (p_debris=0.00) | IoU=0.50 -> boîte mauvaise
+2026-11-25 10:39:55 [INFO] : root : Epoch 22 - Réel : satellite | Prévu : satellite (p_debris=0.00) | IoU=0.71 -> boîte bonne
+2026-11-25 10:39:58 [INFO] : root : Epoch 23 - Réel : satellite | Prévu : satellite (p_debris=0.00) | IoU=0.46 -> boîte mauvaise
+2026-11-25 10:40:01 [INFO] : root : Epoch 24 - Réel : satellite | Prévu : satellite (p_debris=0.00) | IoU=0.33 -> boîte mauvaise
+2026-11-25 10:40:04 [INFO] : root : Epoch 25 - Réel : satellite | Prévu : satellite (p_debris=0.00) | IoU=0.72 -> boîte bonne
+2026-11-25 10:40:06 [INFO] : root : Epoch 26 - Réel : satellite | Prévu : satellite (p_debris=0.00) | IoU=0.28 -> boîte mauvaise
+2026-11-25 10:40:09 [INFO] : root : Epoch 27 - Réel : satellite | Prévu : satellite (p_debris=0.00) | IoU=0.49 -> boîte mauvaise
+2026-11-25 10:40:11 [INFO] : root : Epoch 28 - Réel : debris | Prévu : debris (p_debris=1.00) | IoU=0.71 -> boîte bonne
+2026-11-25 10:40:14 [INFO] : root : Epoch 29 - Réel : satellite | Prévu : satellite (p_debris=0.35) | IoU=0.07 -> boîte mauvaise
+2026-11-25 10:40:17 [INFO] : root : Epoch 30 - Réel : satellite | Prévu : satellite (p_debris=0.00) | IoU=0.16 -> boîte mauvaise
+2026-11-25 10:40:19 [INFO] : root : Epoch 31 - Réel : debris | Prévu : satellite (p_debris=0.00) | IoU=0.11 -> boîte mauvaise
+2026-11-25 10:40:22 [INFO] : root : Epoch 32 - Réel : satellite | Prévu : satellite (p_debris=0.00) | IoU=0.47 -> boîte mauvaise
+2026-11-25 10:40:24 [INFO] : root : Epoch 33 - Réel : satellite | Prévu : satellite (p_debris=0.00) | IoU=0.43 -> boîte mauvaise
+2026-11-25 10:40:27 [INFO] : root : Epoch 34 - Réel : satellite | Prévu : satellite (p_debris=0.00) | IoU=0.38 -> boîte mauvaise
+2026-11-25 10:40:29 [INFO] : root : Epoch 35 - Réel : satellite | Prévu : satellite (p_debris=0.00) | IoU=0.86 -> boîte bonne
+2026-11-25 10:40:32 [INFO] : root : Epoch 36 - Réel : satellite | Prévu : satellite (p_debris=0.00) | IoU=0.08 -> boîte mauvaise
+2026-11-25 10:40:35 [INFO] : root : Epoch 37 - Réel : satellite | Prévu : satellite (p_debris=0.00) | IoU=0.71 -> boîte bonne
+2026-11-25 10:40:37 [INFO] : root : Epoch 38 - Réel : satellite | Prévu : satellite (p_debris=0.00) | IoU=0.20 -> boîte mauvaise
+2026-11-25 10:40:40 [INFO] : root : Epoch 39 - Réel : satellite | Prévu : satellite (p_debris=0.00) | IoU=0.84 -> boîte bonne
+2026-11-25 10:40:42 [INFO] : root : Epoch 40 - Réel : satellite | Prévu : satellite (p_debris=0.00) | IoU=0.81 -> boîte bonne
+2026-11-25 10:40:45 [INFO] : root : Epoch 41 - Réel : satellite | Prévu : satellite (p_debris=0.00) | IoU=0.83 -> boîte bonne
+2026-11-25 10:40:48 [INFO] : root : Epoch 42 - Réel : satellite | Prévu : satellite (p_debris=0.00) | IoU=0.56 -> boîte bonne
+2026-11-25 10:40:51 [INFO] : root : Epoch 43 - Réel : satellite | Prévu : satellite (p_debris=0.00) | IoU=0.76 -> boîte bonne
+2026-11-25 10:40:54 [INFO] : root : Epoch 44 - Réel : satellite | Prévu : satellite (p_debris=0.00) | IoU=0.71 -> boîte bonne
+2026-11-25 10:40:56 [INFO] : root : Epoch 45 - Réel : satellite | Prévu : satellite (p_debris=0.00) | IoU=0.48 -> boîte mauvaise
+2026-11-25 10:40:59 [INFO] : root : Epoch 46 - Réel : satellite | Prévu : satellite (p_debris=0.00) | IoU=0.30 -> boîte mauvaise
+2026-11-25 10:41:01 [INFO] : root : Epoch 47 - Réel : satellite | Prévu : satellite (p_debris=0.00) | IoU=0.82 -> boîte bonne
+2026-11-25 10:41:04 [INFO] : root : Epoch 48 - Réel : satellite | Prévu : satellite (p_debris=0.00) | IoU=0.39 -> boîte mauvaise
+2026-11-25 10:41:07 [INFO] : root : Epoch 49 - Réel : satellite | Prévu : satellite (p_debris=0.00) | IoU=0.76 -> boîte bonne
+2026-11-25 10:41:09 [INFO] : root : Epoch 50 - Réel : satellite | Prévu : satellite (p_debris=0.00) | IoU=0.58 -> boîte bonne
+2026-11-25 10:41:12 [INFO] : root : Epoch 51 - Réel : satellite | Prévu : satellite (p_debris=0.00) | IoU=0.71 -> boîte bonne
+2026-11-25 10:41:14 [INFO] : root : Epoch 52 - Réel : satellite | Prévu : satellite (p_debris=0.00) | IoU=0.70 -> boîte bonne
+2026-11-25 10:41:17 [INFO] : root : Epoch 53 - Réel : satellite | Prévu : satellite (p_debris=0.00) | IoU=0.50 -> boîte bonne
+2026-11-25 10:41:19 [INFO] : root : Epoch 54 - Réel : satellite | Prévu : satellite (p_debris=0.00) | IoU=0.54 -> boîte bonne
+2026-11-25 10:41:22 [INFO] : root : Epoch 55 - Réel : satellite | Prévu : satellite (p_debris=0.00) | IoU=0.84 -> boîte bonne
+2026-11-25 10:41:25 [INFO] : root : Epoch 56 - Réel : satellite | Prévu : satellite (p_debris=0.00) | IoU=0.71 -> boîte bonne
+2026-11-25 10:41:27 [INFO] : root : Epoch 57 - Réel : satellite | Prévu : satellite (p_debris=0.00) | IoU=0.53 -> boîte bonne
+2026-11-25 10:41:30 [INFO] : root : Epoch 58 - Réel : satellite | Prévu : satellite (p_debris=0.00) | IoU=0.55 -> boîte bonne
+2026-11-25 10:41:32 [INFO] : root : Epoch 59 - Réel : satellite | Prévu : satellite (p_debris=0.00) | IoU=0.61 -> boîte bonne
+2026-11-25 10:41:35 [INFO] : root : Epoch 60 - Réel : satellite | Prévu : satellite (p_debris=0.00) | IoU=0.80 -> boîte bonne
+2026-11-25 10:41:47 [INFO] : root : Métriques test : {'bbox_output_box_accuracy': 0.8536585569381714, 'bbox_output_iou': 0.6413249373435974, 'bbox_output_loss': 0.0033085669856518507, 'bbox_output_mae': 0.05028778687119484, 'class_output_accuracy': 0.9837398529052734, 'class_output_loss': 0.179034024477005, 'loss': 0.20259931683540344}
+2026-11-25 10:41:50 [INFO] : root : Classification sur le test :
+              precision    recall  f1-score   support
+
+   satellite     0.9825    1.0000    0.9912       112
+      debris     1.0000    0.8182    0.9000        11
+
+    accuracy                         0.9837       123
+   macro avg     0.9912    0.9091    0.9456       123
+weighted avg     0.9840    0.9837    0.9830       123
+
+2026-11-25 10:41:50 [INFO] : root : IoU test : moyenne=0.641, médiane=0.673
+2026-11-25 10:41:50 [INFO] : root : Boîtes correctes (IoU >= 0.5) : 85.4 %
+2026-11-25 10:41:50 [INFO] : root : Détections correctes (classe + boîte) : 85.4 %
+2026-11-25 10:41:50 [INFO] : root :   satellite : IoU moyenne=0.669, boîtes correctes=90.2 %
+2026-11-25 10:41:50 [INFO] : root :   debris : IoU moyenne=0.357, boîtes correctes=36.4 %
+2026-11-25 10:41:57 [WARNING] : tensorflow : 5 out of the last 18 calls to <function TensorFlowTrainer.make_predict_function.<locals>.one_step_on_data_distributed at 0x71e83bd55bc0> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
+2026-11-25 10:42:00 [WARNING] : tensorflow : 5 out of the last 17 calls to <function TensorFlowTrainer.make_predict_function.<locals>.one_step_on_data_distributed at 0x71e83b949b20> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
+2026-11-25 10:42:11 [INFO] : root : Résultats boîtes retenues : {'model': 'src/models/BBOX/satellite_debris_bbox_lronplateau.keras', 'iou_threshold': 0.5, 'test_support': 123, 'class_report': {'satellite': {'precision': 0.9739130434782609, 'recall': 1.0, 'f1-score': 0.986784140969163, 'support': 112.0}, 'debris': {'precision': 1.0, 'recall': 0.7272727272727273, 'f1-score': 0.8421052631578947, 'support': 11.0}, 'accuracy': 0.975609756097561, 'macro avg': {'precision': 0.9869565217391305, 'recall': 0.8636363636363636, 'f1-score': 0.9144447020635289, 'support': 123.0}, 'weighted avg': {'precision': 0.9762460233297986, 'recall': 0.975609756097561, 'f1-score': 0.9738453795388871, 'support': 123.0}}, 'confusion_matrix': [[112, 0], [3, 8]], 'iou_mean': 0.6603512768822957, 'iou_median': 0.6945000290870667, 'boxes_correct_at_0_5': 0.8780487804878049, 'complete_detections_correct': 0.8780487804878049}
+2026-11-25 10:42:11 [INFO] : root : Erreurs de classe boîtes : 3
+2026-11-25 10:42:11 [INFO] : root : Boîtes avec IoU < 0.5 : 15
+2026-11-25 10:42:11 [INFO] : root : Analyse des performances selon la difficulté :
+ facteur      catégorie  nombre  IoU_moyenne  IoU_médiane  boîtes_IoU_>=_0.5_%  détection_correcte_%
+ surface        >= 15 %      65       0.7226       0.7362                95.38                 95.38
+ surface         5-15 %      45       0.5858       0.6248                80.00                 80.00
+ surface          1-5 %      12       0.4617       0.5064                58.33                 58.33
+ surface          < 1 %       1       0.0122       0.0122                 0.00                  0.00
+position       centrale      89       0.6223       0.6576                83.15                 83.15
+position proche du bord      34       0.6910       0.7157                91.18                 91.18
+  classe      satellite     112       0.6693       0.6863                90.18                 90.18
+  classe         debris      11       0.3566       0.4823                36.36                 36.36
+2026-11-25 10:42:11 [INFO] : root : Objets petits (< 5 % de l'image) : 13 ; IoU moyenne=0.427
+2026-11-25 10:42:11 [INFO] : root : Objets proches du bord (< 5 % de marge) : 34 ; IoU moyenne=0.691
+2026-11-25 10:42:11 [INFO] : root : Erreurs de classe : 2 ; IoU moyenne sur ces erreurs=0.006

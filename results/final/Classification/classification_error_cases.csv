@@ -1,0 +1,3 @@
+type,indice_test,probabilité_debris,image
+faux négatif,23,0.49420931935310364,data/test/images/img022124_jpg.rf.5fdea77c49ac73243d47e212bf328fe5.jpg
+faux négatif,26,1.2167360452508547e-09,data/test/images/img022608_jpg.rf.4b0d142a57846256601ee67a19691fdf.jpg

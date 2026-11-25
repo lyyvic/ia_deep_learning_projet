@@ -1,0 +1,4 @@
+catégorie_confiance,nombre,erreurs,taux_erreur_%
+Très proche du seuil,2,1,50.0
+Proche du seuil,0,0,0.0
+Confiant,121,1,0.83
