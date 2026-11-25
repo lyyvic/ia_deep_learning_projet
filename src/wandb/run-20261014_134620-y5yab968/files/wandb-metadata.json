@@ -1,0 +1,28 @@
+{
+  "os": "Linux-7.0.0-38-generic-x86_64-inconnu-with-glibc2.43",
+  "python": "CPython 3.14.4",
+  "startedAt": "2026-10-14T11:46:20.967426Z",
+  "program": "/home/leo/Documents/ia_deep_learning_projet/main.ipynb",
+  "codePath": "/home/leo/Documents/ia_deep_learning_projet/main.ipynb",
+  "codePathLocal": "main.ipynb",
+  "git": {
+    "remote": "https://github.com/lyyvic/ia_deep_learning_projet.git",
+    "commit": "ef9e31ca7484a18a5f768b75e18426fb512a445f"
+  },
+  "email": "leo.zory2@gmail.com",
+  "root": "/home/leo/Documents/ia_deep_learning_projet",
+  "host": "leo",
+  "executable": "/home/leo/Documents/AI & DEEP Learning/.venv/bin/python",
+  "cpu_count": 4,
+  "cpu_count_logical": 8,
+  "disk": {
+    "/": {
+      "total": "124822110208",
+      "used": "43576668160"
+    }
+  },
+  "memory": {
+    "total": "32911740928"
+  },
+  "writerId": "vc51y68jz6a0anwnm26jjhhe53ez1g3a"
+}

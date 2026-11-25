@@ -1,0 +1,11 @@
+{"time":"2026-10-14T11:46:20.554902106+02:00","level":"INFO","msg":"wandb-core"}
+{"time":"2026-10-14T11:46:20.555070864+02:00","level":"INFO","msg":"stream: starting","core version":"0.30.0"}
+{"time":"2026-10-14T11:46:20.56767208+02:00","level":"INFO","msg":"stream: created new stream","id":"zmsh8gc8"}
+{"time":"2026-10-14T11:46:20.568163955+02:00","level":"INFO","msg":"handler: started"}
+{"time":"2026-10-14T11:46:20.569013365+02:00","level":"INFO","msg":"stream: started"}
+{"time":"2026-10-14T11:46:20.56903805+02:00","level":"INFO","msg":"writer: started","stream_id":"zmsh8gc8"}
+{"time":"2026-10-14T11:46:20.569111279+02:00","level":"INFO","msg":"sender: started"}
+{"time":"2026-10-14T11:46:21.259921982+02:00","level":"INFO","msg":"filestream: sending request","total_files":1,"events_offset":0,"events_lines":1}
+{"time":"2026-10-14T11:46:21.664069597+02:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-10-14T11:46:36.259958359+02:00","level":"INFO","msg":"filestream: sending request","total_files":1,"events_offset":1,"events_lines":1,"uploaded_len":2}
+{"time":"2026-10-14T11:46:36.611939578+02:00","level":"INFO","msg":"filestream: request sent","status":"200 OK"}

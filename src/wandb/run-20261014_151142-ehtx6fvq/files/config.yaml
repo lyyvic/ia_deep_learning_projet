@@ -1,0 +1,77 @@
+_wandb:
+    value:
+        cli_version: 0.30.0
+        e:
+            hal6btb0jd1r9rve0x7nrgluuskcndjl:
+                codePath: /home/leo/Documents/ia_deep_learning_projet/main.ipynb
+                codePathLocal: main.ipynb
+                cpu_count: 4
+                cpu_count_logical: 8
+                disk:
+                    /:
+                        total: "124822110208"
+                        used: "44469702656"
+                email: leo.zory2@gmail.com
+                executable: /home/leo/Documents/AI & DEEP Learning/.venv/bin/python
+                git:
+                    commit: 577377d19f288f16104de549954b2e499059c48b
+                    remote: https://github.com/lyyvic/ia_deep_learning_projet.git
+                host: leo
+                memory:
+                    total: "32911740928"
+                os: Linux-7.0.0-38-generic-x86_64-inconnu-with-glibc2.43
+                program: /home/leo/Documents/ia_deep_learning_projet/main.ipynb
+                python: CPython 3.14.4
+                root: /home/leo/Documents/ia_deep_learning_projet
+                startedAt: "2026-10-14T13:11:42.445731Z"
+                writerId: hal6btb0jd1r9rve0x7nrgluuskcndjl
+        m:
+            - "1": epoch/epoch
+              "6":
+                - 3
+              "7": []
+            - "2": epoch/*
+              "5": 1
+              "6":
+                - 1
+              "7": []
+        python_version: 3.14.4
+        t:
+            "1":
+                - 2
+                - 3
+                - 5
+                - 53
+            "2":
+                - 2
+                - 3
+                - 5
+                - 53
+            "3":
+                - 2
+                - 7
+                - 13
+                - 16
+                - 38
+            "4": 3.14.4
+            "5": 0.30.0
+            "8":
+                - 1
+            "12": 0.30.0
+            "13": linux-x86_64
+batch_size:
+    value: 16
+class_names:
+    value:
+        - satellite
+        - debris
+epochs:
+    value: 2
+img_size:
+    value: 224
+learning_rate:
+    value: 0.001
+num_classes:
+    value: 2
+train_dataset:
+    value: train_50-50

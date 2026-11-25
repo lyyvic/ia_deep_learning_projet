@@ -1,0 +1,71 @@
+_wandb:
+    value:
+        cli_version: 0.30.0
+        e:
+            swlpbgi4642lft0460wdpuyptw5bbfvt:
+                codePath: /home/leo/Documents/ia_deep_learning_projet/main.ipynb
+                codePathLocal: main.ipynb
+                cpu_count: 4
+                cpu_count_logical: 8
+                disk:
+                    /:
+                        total: "124822110208"
+                        used: "43271938048"
+                email: leo.zory2@gmail.com
+                executable: /home/leo/Documents/AI & DEEP Learning/.venv/bin/python
+                git:
+                    commit: eb9d1ba4d9f8fe2b90cb686779f48c7c22befc5d
+                    remote: https://github.com/lyyvic/ia_deep_learning_projet.git
+                host: leo
+                memory:
+                    total: "32911740928"
+                os: Linux-7.0.0-38-generic-x86_64-inconnu-with-glibc2.43
+                program: /home/leo/Documents/ia_deep_learning_projet/main.ipynb
+                python: CPython 3.14.4
+                root: /home/leo/Documents/ia_deep_learning_projet
+                startedAt: "2026-10-14T09:55:59.074476Z"
+                writerId: swlpbgi4642lft0460wdpuyptw5bbfvt
+        m:
+            - "1": epoch/epoch
+              "6":
+                - 3
+              "7": []
+            - "2": epoch/*
+              "5": 1
+              "6":
+                - 1
+              "7": []
+        python_version: 3.14.4
+        t:
+            "1":
+                - 2
+                - 3
+                - 5
+                - 53
+            "2":
+                - 2
+                - 3
+                - 5
+                - 53
+            "3":
+                - 2
+                - 7
+                - 13
+                - 16
+                - 38
+            "4": 3.14.4
+            "5": 0.30.0
+            "8":
+                - 1
+            "12": 0.30.0
+            "13": linux-x86_64
+batch_size:
+    value: 16
+epochs:
+    value: 1
+img_size:
+    value: 224
+learning_rate:
+    value: 0.001
+num_classes:
+    value: 11
