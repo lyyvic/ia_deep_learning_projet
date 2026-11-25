@@ -6,3 +6,4 @@ sujet_projet/datasets
 /utils/__pycache__
 /data
 *.zip
+__pycache__
